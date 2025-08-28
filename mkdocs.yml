@@ -1,5 +1,7 @@
 site_name: 花曜之境伺服器Wiki
 site_url: https://wiki.bloomcraft.xyz
+repo_url: https://github.com/RyanisyydsTT/bloomcraft-wikipage
+repo_name: bloomcraft-wikipage
 site_description: 在花曜之境中創造屬於你的傳奇故事
 theme:
   name: material
@@ -31,3 +33,8 @@ plugins:
         fill: "#0a0e1a"
         text: "#ffffff"
       cards_dir: assets/images/social
+  - git-authors:
+      show_contribution: true
+      show_line_count: true
+      count_empty_lines: true
+      fallback_to_empty: false      
