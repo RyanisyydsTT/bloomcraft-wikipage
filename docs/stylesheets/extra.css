@@ -195,3 +195,32 @@ footer .footer-content p { margin: 0.1rem 0; }
   background: rgba(255,168,204,0.18) !important;
   color: var(--text) !important;
 }
+
+/* === 強制清理 Nav/TOC 每行背景 === */
+
+/* 所有 nav item 保持透明背景 */
+.md-nav__item,
+.md-nav__item--nested {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 左側主目錄 & 右側 TOC 的 link 預設背景清掉 */
+.md-nav--primary .md-nav__link,
+.md-nav--secondary .md-nav__link {
+  background: transparent !important;
+}
+
+/* 只在 hover/active 才加背景 */
+.md-nav__link:hover,
+.md-nav__link:focus {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 6px;
+  color: var(--primary) !important;
+}
+.md-nav__item .md-nav__link--active {
+  background: rgba(255, 107, 157, 0.15) !important;
+  border-radius: 6px;
+  color: var(--primary) !important;
+}
+
