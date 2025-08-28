@@ -3,6 +3,13 @@ on:
   push:
     branches:
       - main
+      
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+      
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -13,3 +20,9 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material pillow CairoSVG
       - run: mkdocs gh-deploy --force
+      - run: |
+          curl -X PUT \
+            -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/pages \
+            -d '{"cname":"wiki.bloomcraft.xyz"}'
