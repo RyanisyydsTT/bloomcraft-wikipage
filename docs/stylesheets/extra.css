@@ -103,20 +103,43 @@ footer .footer-content p { margin: 0.1rem 0; }
 .md-nav--primary,
 .md-nav--secondary { background: var(--surface); }
 
-/* ====== 手機版導航修正 ====== */
-/* 手機版漢堡選單背景 */
+/* ====== 手機版導航修正 - 強化版 ====== */
+/* 手機版漢堡選單強制背景 */
 @media screen and (max-width: 76.1875em) {
-  .md-nav--primary,
-  .md-nav--primary .md-nav__list,
-  .md-overlay {
+  /* 主選單容器 */
+  .md-nav--primary {
     background: var(--surface) !important;
     background-color: var(--surface) !important;
   }
   
-  /* 手機版選單項目背景 */
-  .md-nav--primary .md-nav__item,
-  .md-nav--primary .md-nav__link {
+  /* 選單覆蓋層 */
+  .md-overlay {
+    background: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  /* 側邊欄容器 */
+  .md-sidebar--primary {
+    background: var(--surface) !important;
+    background-color: var(--surface) !important;
+  }
+  
+  /* 選單內部 */
+  .md-nav--primary .md-nav__list {
+    background: var(--surface) !important;
+    background-color: var(--surface) !important;
+  }
+  
+  /* 選單項目保持透明，但確保父容器有背景 */
+  .md-nav--primary .md-nav__item {
     background: transparent !important;
+  }
+  
+  /* 選單標題區域 */
+  .md-nav--primary .md-nav__title {
+    background: rgba(255, 107, 157, 0.1) !important;
+    background-color: rgba(255, 107, 157, 0.1) !important;
+    border-bottom: 1px solid rgba(255, 107, 157, 0.2) !important;
   }
   
   /* 手機版選單 hover 效果 */
@@ -134,10 +157,17 @@ footer .footer-content p { margin: 0.1rem 0; }
   }
 }
 
-/* 手機版選單標題 */
-.md-nav__title {
-  background: var(--surface) !important;
-  border-bottom: 1px solid rgba(255, 107, 157, 0.2);
+/* 手機版選單按鈕 */
+.md-header__button {
+  color: var(--text) !important;
+}
+
+/* 確保手機版不受全域透明影響 */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary,
+  .md-sidebar--primary *:not(.md-nav__item) {
+    background: var(--surface) !important;
+  }
 }
 
 /* 連結顏色 */
