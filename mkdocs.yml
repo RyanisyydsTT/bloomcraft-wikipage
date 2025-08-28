@@ -26,6 +26,7 @@ plugins:
       cards: true
       cards_layout_options:
         font_family: "Noto Sans TC"
+        description: "您可以在這裡找到幾乎所有功能的使用方法"
       cards_color:
         fill: "#0a0e1a"
         text: "#ffffff"
