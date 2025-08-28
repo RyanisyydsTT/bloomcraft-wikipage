@@ -20,3 +20,10 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true  
+plugins:
+  - social:
+      cards: true
+      cards_color:
+        fill: "#0a0e1a"  # Your background color
+        text: "#ffffff"  # Your text color
+      cards_font: "Noto Sans"
