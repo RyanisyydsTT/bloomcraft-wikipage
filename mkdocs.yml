@@ -24,7 +24,9 @@ markdown_extensions:
 plugins:
   - social:
       cards: true
+      cards_layout_options:
+        font_family: "zpix"
       cards_color:
-        fill: "#0a0e1a"  # Your background color
-        text: "#ffffff"  # Your text color
-      cards_font: "Noto Sans"
+        fill: "#0a0e1a"
+        text: "#ffffff"
+      cards_dir: assets/images/social
