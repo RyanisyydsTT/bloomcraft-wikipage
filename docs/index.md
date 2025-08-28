@@ -1,4 +1,4 @@
-# 🌸 歡迎來到 BloomCraft 花曜之境 Wiki
+# 歡迎來到 BloomCraft 花曜之境 Wiki
 
 > 「在花曜之境中創造屬於你的傳奇故事」
 
