@@ -1,0 +1,103 @@
+/* --- 字體 --- */
+@font-face {
+    font-family: "zpix";
+    src: url("../fonts/zpix.ttf") format("truetype");
+    font-display: swap;
+}
+
+:root {
+    --primary: #ff6b9d;
+    --secondary: #ff8fab;
+    --accent: #ffa8cc;
+    --background: #0a0e1a;
+    --surface: #1a1f35;
+    --text: #ffffff;
+    --text-muted: #94a3b8;
+}
+
+/* --- 全站字體 --- */
+body,
+.md-typeset {
+    font-family: "zpix", "Noto Sans TC", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* --- 頂部導覽列 --- */
+.md-header {
+    background: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 107, 157, 0.2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.md-header__title {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* --- Tabs 導覽 --- */
+.md-tabs {
+    background: transparent;
+}
+.md-tabs__link {
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    color: var(--text-muted);
+}
+.md-tabs__link--active,
+.md-tabs__link:hover {
+    color: var(--primary);
+    background: rgba(255, 107, 157, 0.1);
+}
+
+/* --- 按鈕 --- */
+.md-typeset .md-button,
+.md-typeset .md-button--primary {
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+.md-typeset .md-button--primary {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+}
+.md-typeset .md-button--primary:hover {
+    background: var(--secondary);
+}
+
+/* --- 卡片 &提示區塊 --- */
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 107, 157, 0.2);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* --- 區塊標題 H2/H3 --- */
+.md-typeset h2,
+.md-typeset h3 {
+    font-family: "zpix", monospace;
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    background: var(--surface);
+    border-top: 1px solid rgba(255, 107, 157, 0.2);
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+footer .footer-content {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+footer .footer-content p {
+    margin: 0.1rem 0;
+}
