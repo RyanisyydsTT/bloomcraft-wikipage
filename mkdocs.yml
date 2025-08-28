@@ -25,7 +25,7 @@ plugins:
   - social:
       cards: true
       cards_layout_options:
-        font_family: "Chiron GoRound TC, Noto Color Emoji, Apple Color Emoji, Segoe UI Emoji, sans-serif"
+        font_family: "Noto Sans TC"
       cards_color:
         fill: "#0a0e1a"
         text: "#ffffff"
