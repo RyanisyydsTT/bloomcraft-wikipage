@@ -103,6 +103,43 @@ footer .footer-content p { margin: 0.1rem 0; }
 .md-nav--primary,
 .md-nav--secondary { background: var(--surface); }
 
+/* ====== 手機版導航修正 ====== */
+/* 手機版漢堡選單背景 */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary,
+  .md-nav--primary .md-nav__list,
+  .md-overlay {
+    background: var(--surface) !important;
+    background-color: var(--surface) !important;
+  }
+  
+  /* 手機版選單項目背景 */
+  .md-nav--primary .md-nav__item,
+  .md-nav--primary .md-nav__link {
+    background: transparent !important;
+  }
+  
+  /* 手機版選單 hover 效果 */
+  .md-nav--primary .md-nav__link:hover,
+  .md-nav--primary .md-nav__link:focus {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 6px !important;
+    color: var(--primary) !important;
+  }
+  
+  .md-nav--primary .md-nav__link--active {
+    background: rgba(255, 107, 157, 0.2) !important;
+    border-radius: 6px !important;
+    color: var(--primary) !important;
+  }
+}
+
+/* 手機版選單標題 */
+.md-nav__title {
+  background: var(--surface) !important;
+  border-bottom: 1px solid rgba(255, 107, 157, 0.2);
+}
+
 /* 連結顏色 */
 .md-typeset a { color: var(--primary); }
 .md-typeset a:hover { color: var(--secondary); }
@@ -147,16 +184,26 @@ footer .footer-content p { margin: 0.1rem 0; }
 /* ====== FIXED: 徹底清除所有導航背景 ====== */
 
 /* 最高優先級：強制移除所有導航相關背景 */
-.md-sidebar *,
-.md-nav *,
-.md-nav__list *,
-.md-nav__item *,
+/* 但排除手機版主導航 */
+.md-sidebar:not(.md-sidebar--primary) *,
+.md-nav:not(.md-nav--primary) *,
 .md-nav--secondary *,
-.md-sidebar__scrollwrap * {
+.md-sidebar--secondary * {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
   box-shadow: none !important;
+}
+
+/* 桌面版導航背景清除 */
+@media screen and (min-width: 76.25em) {
+  .md-nav *,
+  .md-sidebar * {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
 }
 
 /* 特別針對右側 TOC */
