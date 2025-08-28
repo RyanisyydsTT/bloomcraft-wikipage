@@ -18,7 +18,7 @@
 /* --- 全站字體 --- */
 body,
 .md-typeset {
-    font-family: "zpix", "Noto Sans TC", sans-serif;
+    font-family: "zpix", "Noto Sans TC", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
     background: var(--background);
     color: var(--text);
     line-height: 1.6;
@@ -144,132 +144,99 @@ footer .footer-content p { margin: 0.1rem 0; }
 .md-search__form { background: var(--surface); }
 .md-search__input { color: var(--text); }
 
-/* ====== emoji 修正 ====== */
-.md-typeset :is(p, li, span, strong, em) {
-  -webkit-text-fill-color: unset !important;
-  color: inherit !important;
-}
-.md-typeset .admonition-title:before { color: inherit !important; }
-.emoji {
-  font-family: "zpix", "Noto Sans TC", sans-serif !important;
-  color: inherit !important;
-  -webkit-text-fill-color: unset !important;
+/* ====== FIXED: 徹底清除所有導航背景 ====== */
+
+/* 強制移除所有可能的導航背景 */
+.md-nav,
+.md-nav__list,
+.md-nav__item,
+.md-nav__item--nested,
+.md-nav--primary,
+.md-nav--secondary,
+.md-nav__item > *,
+.md-sidebar .md-nav__item,
+.md-sidebar__scrollwrap .md-nav__item {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
 }
 
-/* ====== Nav & TOC 修正 ====== */
-
-/* 清掉預設 highlight 疊層 */
+/* 清除偽元素背景 */
+.md-nav__item::before,
+.md-nav__item::after,
 .md-nav__link::before,
 .md-nav__link::after {
   background: none !important;
+  background-color: transparent !important;
   box-shadow: none !important;
   content: none !important;
+  display: none !important;
 }
 
-/* nav 區塊標題底色移除 */
+/* 清除奇偶數背景色 */
+.md-nav__item:nth-child(odd),
+.md-nav__item:nth-child(even),
+.md-nav__item:nth-of-type(odd),
+.md-nav__item:nth-of-type(even) {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 清除可能的容器背景 */
 .md-nav__title,
-.md-sidebar__scrollwrap::before,
-.md-sidebar__scrollwrap::after {
-  background: none !important;
-  box-shadow: none !important;
-}
-
-/* hover/active 效果統一 */
-.md-nav__link:hover,
-.md-nav__link:focus {
-  background: rgba(255,255,255,0.05) !important;
-  border-radius: 6px;
-  color: var(--primary) !important;
-}
-.md-nav__item .md-nav__link--active {
-  background: rgba(255,107,157,0.15) !important;
-  border-radius: 6px;
-  color: var(--primary) !important;
-}
-
-/* TOC 子層保持透明 */
-.md-nav--secondary .md-nav__item { background: transparent !important; }
-
-/* 搜尋 highlight 柔和 */
-.md-typeset mark {
-  background: rgba(255,168,204,0.18) !important;
-  color: var(--text) !important;
-}
-
-/* === 強制清理 Nav/TOC 每行背景 === */
-
-/* 所有 nav item 保持透明背景 */
-.md-nav__item,
-.md-nav__item--nested {
+.md-sidebar__scrollwrap,
+.md-sidebar__inner {
   background: transparent !important;
+  background-color: transparent !important;
   box-shadow: none !important;
-}
-
-/* 左側主目錄 & 右側 TOC 的 link 預設背景清掉 */
-.md-nav--primary .md-nav__link,
-.md-nav--secondary .md-nav__link {
-  background: transparent !important;
 }
 
 /* 只在 hover/active 才加背景 */
 .md-nav__link:hover,
 .md-nav__link:focus {
   background: rgba(255, 255, 255, 0.05) !important;
-  border-radius: 6px;
-  color: var(--primary) !important;
-}
-.md-nav__item .md-nav__link--active {
-  background: rgba(255, 107, 157, 0.15) !important;
-  border-radius: 6px;
-  color: var(--primary) !important;
-}
-
-/* === 強制徹底清理 TOC/Nav 的背景塊狀 === */
-
-/* 清除所有 nav 列表、子列表的背景 */
-.md-nav,
-.md-nav__list,
-.md-nav__item,
-.md-nav__item--nested,
-.md-nav--primary,
-.md-nav--secondary {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* 清掉奇數/偶數列的交錯底色（Material 會在列表用 nth-child 加顏色） */
-.md-nav__item:nth-child(odd),
-.md-nav__item:nth-child(even) {
-  background: transparent !important;
-}
-
-/* 只允許 hover/active 出現背景 */
-.md-nav__link:hover,
-.md-nav__link:focus {
-  background: rgba(255, 255, 255, 0.05) !important;
-  border-radius: 6px !important;
-  color: var(--primary) !important;
-}
-.md-nav__item .md-nav__link--active {
-  background: rgba(255, 107, 157, 0.15) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
   border-radius: 6px !important;
   color: var(--primary) !important;
 }
 
-
-/* Target all possible navigation containers */
-.md-nav__list,
-.md-nav__item,
-.md-nav__item--nested,
-.md-nav__item > *,
-.md-sidebar .md-nav__item {
-  background: transparent !important;
-  background-color: transparent !important;
+.md-nav__item .md-nav__link--active {
+  background: rgba(255, 107, 157, 0.15) !important;
+  background-color: rgba(255, 107, 157, 0.15) !important;
+  border-radius: 6px !important;
+  color: var(--primary) !important;
 }
 
-/* Remove any pseudo-element backgrounds */
-.md-nav__item::before,
-.md-nav__item::after {
-  background: none !important;
-  display: none !important;
+/* ====== FIXED: Emoji 修正 ====== */
+
+/* 確保 emoji 正確顯示 */
+.md-typeset :is(p, li, span, strong, em, h1, h2, h3, h4, h5, h6) {
+  -webkit-text-fill-color: unset !important;
+  color: inherit !important;
+}
+
+/* Emoji 字體回退 */
+.emoji,
+span:has(img[src*="emoji"]),
+*:contains("🌸"),
+*:contains("🔥"),
+*:contains("💎"),
+*:contains("🏪"),
+*:contains("⚙️") {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "zpix", sans-serif !important;
+  color: inherit !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+/* 修正 admonition 圖示 */
+.md-typeset .admonition-title:before,
+.md-typeset .admonition-title::before {
+  color: inherit !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+/* ====== 搜尋 highlight 柔和 ====== */
+.md-typeset mark {
+  background: rgba(255,168,204,0.18) !important;
+  color: var(--text) !important;
 }
