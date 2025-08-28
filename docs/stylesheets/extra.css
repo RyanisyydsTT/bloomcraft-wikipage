@@ -24,8 +24,6 @@ body,
     line-height: 1.6;
 }
 
-
-
 /* --- 頂部導覽列 --- */
 .md-header {
     background: rgba(10, 14, 26, 0.95);
@@ -39,9 +37,7 @@ body,
 }
 
 /* --- Tabs 導覽 --- */
-.md-tabs {
-    background: transparent;
-}
+.md-tabs { background: transparent; }
 .md-tabs__link {
     font-weight: 600;
     border-radius: 8px;
@@ -67,11 +63,9 @@ body,
     color: #fff;
     border: none;
 }
-.md-typeset .md-button--primary:hover {
-    background: var(--secondary);
-}
+.md-typeset .md-button--primary:hover { background: var(--secondary); }
 
-/* --- 卡片 &提示區塊 --- */
+/* --- 卡片 & 提示區塊 --- */
 .md-typeset .admonition,
 .md-typeset details {
     border-radius: 12px;
@@ -89,6 +83,7 @@ body,
     -webkit-text-fill-color: transparent;
 }
 
+/* --- Footer --- */
 footer {
     background: var(--surface);
     border-top: 1px solid rgba(255, 107, 157, 0.2);
@@ -100,26 +95,22 @@ footer .footer-content {
     font-size: 0.85rem;
     line-height: 1.4;
 }
-footer .footer-content p {
-    margin: 0.1rem 0;
-}
+footer .footer-content p { margin: 0.1rem 0; }
 
-
-/* ====== 深色主題可讀性修正 ====== */
-
-/* 內文區與側欄底色 */
+/* ====== 深色主題可讀性 ====== */
 .md-main { background: var(--background); color: var(--text); }
-.md-sidebar, .md-nav--primary, .md-nav--secondary { background: var(--surface); }
+.md-sidebar,
+.md-nav--primary,
+.md-nav--secondary { background: var(--surface); }
 
-/* 連結顏色（內文＋側欄） */
+/* 連結顏色 */
 .md-typeset a { color: var(--primary); }
 .md-typeset a:hover { color: var(--secondary); }
 .md-nav__link { color: var(--text-muted); }
-.md-nav__link--active, .md-nav__link:hover { color: var(--primary); }
 
 /* 表格 */
-.md-typeset table:not([class]) { 
-  background: var(--surface); 
+.md-typeset table:not([class]) {
+  background: var(--surface);
   border: 1px solid rgba(255,255,255,0.12);
 }
 .md-typeset table:not([class]) th,
@@ -127,121 +118,47 @@ footer .footer-content p {
   color: var(--text);
   border-color: rgba(255,255,255,0.12);
 }
-.md-typeset table:not([class]) th { 
-  background: rgba(255,255,255,0.04);
-}
+.md-typeset table:not([class]) th { background: rgba(255,255,255,0.04); }
 
 /* 程式碼區塊 */
-.md-typeset code { 
-  background: #111827; 
-  color: #e5e7eb; 
-  border-radius: 6px; 
+.md-typeset code {
+  background: #111827;
+  color: #e5e7eb;
+  border-radius: 6px;
 }
-.md-typeset pre { 
-  background: #0b1220; 
-  color: #e5e7eb; 
+.md-typeset pre {
+  background: #0b1220;
+  color: #e5e7eb;
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 8px;
 }
 
 /* 區塊引用、水平線 */
-.md-typeset blockquote { 
+.md-typeset blockquote {
   border-left: 4px solid var(--primary);
   background: rgba(255,255,255,0.03);
 }
 .md-typeset hr { border-color: rgba(255,255,255,0.12); }
 
-/* 搜尋面板（暗色） */
+/* 搜尋面板 */
 .md-search__form { background: var(--surface); }
 .md-search__input { color: var(--text); }
 
-/* ====== emoji 被強制染色的修正 ====== */
-
-/* 內文的 emoji 不跟著主題顏色跑（不要被染成粉紅或藍色） */
+/* ====== emoji 修正 ====== */
 .md-typeset :is(p, li, span, strong, em) {
   -webkit-text-fill-color: unset !important;
   color: inherit !important;
 }
-
-/* 提示框標題前置圖示（Material 會上色），還原為正文色 */
-.md-typeset .admonition-title:before {
-  color: inherit !important;
-}
-
-/* 若需要更精準控制，給 emoji 加 class="emoji"（可選用） */
+.md-typeset .admonition-title:before { color: inherit !important; }
 .emoji {
   font-family: "zpix", "Noto Sans TC", sans-serif !important;
   color: inherit !important;
   -webkit-text-fill-color: unset !important;
 }
 
-/* ====== 小優化 ====== */
+/* ====== Nav & TOC 修正 ====== */
 
-/* 側欄目前頁籤的圓角背景，跟你的粉色系調和 */
-.md-nav__item .md-nav__link--active {
-  background: rgba(255, 107, 157, 0.10);
-  border-radius: 8px;
-}
-
-/* 搜尋 highlight */
-.md-typeset mark {
-  background: rgba(255, 168, 204, 0.25);
-  color: var(--text);
-}
-
-/* toc 右側小目錄字色 */
-.md-nav--secondary .md-nav__link { color: var(--text-muted); }
-.md-nav--secondary .md-nav__link--active, 
-.md-nav--secondary .md-nav__link:hover { color: var(--primary); }
-
-
-/* ==== 修正：Nav 與 TOC 每列背景不一致 ==== */
-/* 左側主導覽＋右側 TOC：清掉預設的列背景與疊層 */
-.md-nav--primary .md-nav__link,
-.md-nav--secondary .md-nav__link {
-  background: transparent !important;
-}
-.md-nav__link::after { display: none !important; } /* 移除內建 hover/focus 疊層 */
-
-/* 區塊標題（例如「伺服器功能」「Table of contents」）的底條也統一 */
-.md-nav__title,
-.md-sidebar__scrollwrap::before,
-.md-sidebar__scrollwrap::after {
-  background: transparent !important;
-  box-shadow: none !important;
-}
-
-/* 統一側欄容器底色 */
-.md-sidebar,
-.md-nav--primary,
-.md-nav--secondary {
-  background: var(--surface) !important;
-}
-
-/* 你要的 hover/active 效果（單一透明色，避免每列深淺不一） */
-.md-nav__link:hover,
-.md-nav__link:focus {
-  background: rgba(255,255,255,0.04) !important;
-  border-radius: 8px;
-}
-.md-nav__item .md-nav__link--active {
-  background: rgba(255, 107, 157, 0.10) !important;
-  border-radius: 8px;
-}
-
-/* TOC 縮排區塊也保持透明，不要局部底色 */
-.md-nav--secondary .md-nav__item { background: transparent !important; }
-
-/* 如果搜尋高亮讓列看起來「一塊一塊」，把 mark 調柔和 */
-.md-typeset mark {
-  background: rgba(255, 168, 204, 0.18) !important;
-  color: var(--text) !important;
-}
-
-
-/* === 修正左側/右側 nav/TOC 每行背景顏色不一致 === */
-
-/* 移除 Material nav 預設的漸層 highlight 疊層 */
+/* 清掉預設 highlight 疊層 */
 .md-nav__link::before,
 .md-nav__link::after {
   background: none !important;
@@ -249,7 +166,7 @@ footer .footer-content p {
   content: none !important;
 }
 
-/* 清掉 nav 區塊標題後方的漸層條 */
+/* nav 區塊標題底色移除 */
 .md-nav__title,
 .md-sidebar__scrollwrap::before,
 .md-sidebar__scrollwrap::after {
@@ -257,26 +174,24 @@ footer .footer-content p {
   box-shadow: none !important;
 }
 
-/* 統一側欄背景色 */
-.md-sidebar,
-.md-nav--primary,
-.md-nav--secondary {
-  background: var(--surface) !important;
-}
-
-/* 統一每列的 hover 與 active 效果 */
+/* hover/active 效果統一 */
 .md-nav__link:hover,
 .md-nav__link:focus {
   background: rgba(255,255,255,0.05) !important;
   border-radius: 6px;
+  color: var(--primary) !important;
 }
 .md-nav__item .md-nav__link--active {
   background: rgba(255,107,157,0.15) !important;
   border-radius: 6px;
+  color: var(--primary) !important;
 }
 
-/* TOC 次層縮排列保持透明，不要一塊一塊 */
-.md-nav--secondary .md-nav__item {
-  background: transparent !important;
-}
+/* TOC 子層保持透明 */
+.md-nav--secondary .md-nav__item { background: transparent !important; }
 
+/* 搜尋 highlight 柔和 */
+.md-typeset mark {
+  background: rgba(255,168,204,0.18) !important;
+  color: var(--text) !important;
+}
