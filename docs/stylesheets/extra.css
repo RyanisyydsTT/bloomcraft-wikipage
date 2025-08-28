@@ -24,6 +24,8 @@ body,
     line-height: 1.6;
 }
 
+
+
 /* --- 頂部導覽列 --- */
 .md-header {
     background: rgba(10, 14, 26, 0.95);
@@ -101,3 +103,93 @@ footer .footer-content {
 footer .footer-content p {
     margin: 0.1rem 0;
 }
+
+
+/* ====== 深色主題可讀性修正 ====== */
+
+/* 內文區與側欄底色 */
+.md-main { background: var(--background); color: var(--text); }
+.md-sidebar, .md-nav--primary, .md-nav--secondary { background: var(--surface); }
+
+/* 連結顏色（內文＋側欄） */
+.md-typeset a { color: var(--primary); }
+.md-typeset a:hover { color: var(--secondary); }
+.md-nav__link { color: var(--text-muted); }
+.md-nav__link--active, .md-nav__link:hover { color: var(--primary); }
+
+/* 表格 */
+.md-typeset table:not([class]) { 
+  background: var(--surface); 
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  color: var(--text);
+  border-color: rgba(255,255,255,0.12);
+}
+.md-typeset table:not([class]) th { 
+  background: rgba(255,255,255,0.04);
+}
+
+/* 程式碼區塊 */
+.md-typeset code { 
+  background: #111827; 
+  color: #e5e7eb; 
+  border-radius: 6px; 
+}
+.md-typeset pre { 
+  background: #0b1220; 
+  color: #e5e7eb; 
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+}
+
+/* 區塊引用、水平線 */
+.md-typeset blockquote { 
+  border-left: 4px solid var(--primary);
+  background: rgba(255,255,255,0.03);
+}
+.md-typeset hr { border-color: rgba(255,255,255,0.12); }
+
+/* 搜尋面板（暗色） */
+.md-search__form { background: var(--surface); }
+.md-search__input { color: var(--text); }
+
+/* ====== emoji 被強制染色的修正 ====== */
+
+/* 內文的 emoji 不跟著主題顏色跑（不要被染成粉紅或藍色） */
+.md-typeset :is(p, li, span, strong, em) {
+  -webkit-text-fill-color: unset !important;
+  color: inherit !important;
+}
+
+/* 提示框標題前置圖示（Material 會上色），還原為正文色 */
+.md-typeset .admonition-title:before {
+  color: inherit !important;
+}
+
+/* 若需要更精準控制，給 emoji 加 class="emoji"（可選用） */
+.emoji {
+  font-family: "zpix", "Noto Sans TC", sans-serif !important;
+  color: inherit !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+/* ====== 小優化 ====== */
+
+/* 側欄目前頁籤的圓角背景，跟你的粉色系調和 */
+.md-nav__item .md-nav__link--active {
+  background: rgba(255, 107, 157, 0.10);
+  border-radius: 8px;
+}
+
+/* 搜尋 highlight */
+.md-typeset mark {
+  background: rgba(255, 168, 204, 0.25);
+  color: var(--text);
+}
+
+/* toc 右側小目錄字色 */
+.md-nav--secondary .md-nav__link { color: var(--text-muted); }
+.md-nav--secondary .md-nav__link--active, 
+.md-nav--secondary .md-nav__link:hover { color: var(--primary); }
