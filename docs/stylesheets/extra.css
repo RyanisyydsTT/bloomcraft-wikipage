@@ -146,48 +146,63 @@ footer .footer-content p { margin: 0.1rem 0; }
 
 /* ====== FIXED: 徹底清除所有導航背景 ====== */
 
-/* 強制移除所有可能的導航背景 */
-.md-nav,
-.md-nav__list,
-.md-nav__item,
-.md-nav__item--nested,
-.md-nav--primary,
-.md-nav--secondary,
-.md-nav__item > *,
-.md-sidebar .md-nav__item,
-.md-sidebar__scrollwrap .md-nav__item {
+/* 最高優先級：強制移除所有導航相關背景 */
+.md-sidebar *,
+.md-nav *,
+.md-nav__list *,
+.md-nav__item *,
+.md-nav--secondary *,
+.md-sidebar__scrollwrap * {
   background: transparent !important;
   background-color: transparent !important;
+  background-image: none !important;
   box-shadow: none !important;
 }
 
-/* 清除偽元素背景 */
-.md-nav__item::before,
-.md-nav__item::after,
-.md-nav__link::before,
-.md-nav__link::after {
+/* 特別針對右側 TOC */
+.md-sidebar--secondary,
+.md-sidebar--secondary .md-sidebar__scrollwrap,
+.md-sidebar--secondary .md-nav,
+.md-sidebar--secondary .md-nav__list,
+.md-sidebar--secondary .md-nav__item,
+.md-sidebar--secondary .md-nav__link {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* 清除所有偽元素 */
+.md-nav *::before,
+.md-nav *::after,
+.md-sidebar *::before,
+.md-sidebar *::after {
   background: none !important;
   background-color: transparent !important;
+  background-image: none !important;
   box-shadow: none !important;
   content: none !important;
   display: none !important;
 }
 
-/* 清除奇偶數背景色 */
-.md-nav__item:nth-child(odd),
-.md-nav__item:nth-child(even),
-.md-nav__item:nth-of-type(odd),
-.md-nav__item:nth-of-type(even) {
+/* 清除所有可能的選擇器組合 */
+.md-nav__item,
+.md-nav__item--nested,
+.md-nav__item:nth-child(n),
+.md-nav__item:nth-of-type(n),
+li.md-nav__item {
   background: transparent !important;
   background-color: transparent !important;
+  background-image: none !important;
 }
 
-/* 清除可能的容器背景 */
+/* 清除父容器可能的背景 */
 .md-nav__title,
 .md-sidebar__scrollwrap,
-.md-sidebar__inner {
+.md-sidebar__inner,
+.md-sidebar {
   background: transparent !important;
   background-color: transparent !important;
+  background-image: none !important;
   box-shadow: none !important;
 }
 
@@ -205,6 +220,20 @@ footer .footer-content p { margin: 0.1rem 0; }
   background-color: rgba(255, 107, 157, 0.15) !important;
   border-radius: 6px !important;
   color: var(--primary) !important;
+}
+
+/* ====== 核彈級背景清除 ====== */
+/* 如果上面還不夠，使用這個終極方案 */
+.md-sidebar--secondary * {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* 強制覆蓋任何可能的 CSS 變數背景 */
+.md-nav__item {
+  --md-nav-item-background: transparent !important;
+  --md-nav-item-background-color: transparent !important;
 }
 
 /* ====== FIXED: Emoji 修正 ====== */
