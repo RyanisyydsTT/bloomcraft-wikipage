@@ -1,5 +1,6 @@
 site_name: 花曜之境伺服器Wiki
 site_url: https://wiki.bloomcraft.xyz
+site_description: 在花曜之境中創造屬於你的傳奇故事
 theme:
   name: material
   custom_dir: overrides
@@ -26,7 +27,6 @@ plugins:
       cards: true
       cards_layout_options:
         font_family: "Noto Sans TC"
-        description: "您可以在這裡找到幾乎所有功能的使用方法"
       cards_color:
         fill: "#0a0e1a"
         text: "#ffffff"
