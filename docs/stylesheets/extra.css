@@ -224,3 +224,34 @@ footer .footer-content p { margin: 0.1rem 0; }
   color: var(--primary) !important;
 }
 
+/* === 強制徹底清理 TOC/Nav 的背景塊狀 === */
+
+/* 清除所有 nav 列表、子列表的背景 */
+.md-nav,
+.md-nav__list,
+.md-nav__item,
+.md-nav__item--nested,
+.md-nav--primary,
+.md-nav--secondary {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 清掉奇數/偶數列的交錯底色（Material 會在列表用 nth-child 加顏色） */
+.md-nav__item:nth-child(odd),
+.md-nav__item:nth-child(even) {
+  background: transparent !important;
+}
+
+/* 只允許 hover/active 出現背景 */
+.md-nav__link:hover,
+.md-nav__link:focus {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 6px !important;
+  color: var(--primary) !important;
+}
+.md-nav__item .md-nav__link--active {
+  background: rgba(255, 107, 157, 0.15) !important;
+  border-radius: 6px !important;
+  color: var(--primary) !important;
+}
