@@ -237,3 +237,46 @@ footer .footer-content p {
   background: rgba(255, 168, 204, 0.18) !important;
   color: var(--text) !important;
 }
+
+
+/* === 修正左側/右側 nav/TOC 每行背景顏色不一致 === */
+
+/* 移除 Material nav 預設的漸層 highlight 疊層 */
+.md-nav__link::before,
+.md-nav__link::after {
+  background: none !important;
+  box-shadow: none !important;
+  content: none !important;
+}
+
+/* 清掉 nav 區塊標題後方的漸層條 */
+.md-nav__title,
+.md-sidebar__scrollwrap::before,
+.md-sidebar__scrollwrap::after {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* 統一側欄背景色 */
+.md-sidebar,
+.md-nav--primary,
+.md-nav--secondary {
+  background: var(--surface) !important;
+}
+
+/* 統一每列的 hover 與 active 效果 */
+.md-nav__link:hover,
+.md-nav__link:focus {
+  background: rgba(255,255,255,0.05) !important;
+  border-radius: 6px;
+}
+.md-nav__item .md-nav__link--active {
+  background: rgba(255,107,157,0.15) !important;
+  border-radius: 6px;
+}
+
+/* TOC 次層縮排列保持透明，不要一塊一塊 */
+.md-nav--secondary .md-nav__item {
+  background: transparent !important;
+}
+
