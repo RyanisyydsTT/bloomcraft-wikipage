@@ -193,3 +193,47 @@ footer .footer-content p {
 .md-nav--secondary .md-nav__link { color: var(--text-muted); }
 .md-nav--secondary .md-nav__link--active, 
 .md-nav--secondary .md-nav__link:hover { color: var(--primary); }
+
+
+/* ==== 修正：Nav 與 TOC 每列背景不一致 ==== */
+/* 左側主導覽＋右側 TOC：清掉預設的列背景與疊層 */
+.md-nav--primary .md-nav__link,
+.md-nav--secondary .md-nav__link {
+  background: transparent !important;
+}
+.md-nav__link::after { display: none !important; } /* 移除內建 hover/focus 疊層 */
+
+/* 區塊標題（例如「伺服器功能」「Table of contents」）的底條也統一 */
+.md-nav__title,
+.md-sidebar__scrollwrap::before,
+.md-sidebar__scrollwrap::after {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 統一側欄容器底色 */
+.md-sidebar,
+.md-nav--primary,
+.md-nav--secondary {
+  background: var(--surface) !important;
+}
+
+/* 你要的 hover/active 效果（單一透明色，避免每列深淺不一） */
+.md-nav__link:hover,
+.md-nav__link:focus {
+  background: rgba(255,255,255,0.04) !important;
+  border-radius: 8px;
+}
+.md-nav__item .md-nav__link--active {
+  background: rgba(255, 107, 157, 0.10) !important;
+  border-radius: 8px;
+}
+
+/* TOC 縮排區塊也保持透明，不要局部底色 */
+.md-nav--secondary .md-nav__item { background: transparent !important; }
+
+/* 如果搜尋高亮讓列看起來「一塊一塊」，把 mark 調柔和 */
+.md-typeset mark {
+  background: rgba(255, 168, 204, 0.18) !important;
+  color: var(--text) !important;
+}
