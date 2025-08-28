@@ -1,5 +1,5 @@
 site_name: 花曜之境伺服器Wiki
-site_url: wiki.bloomcraft.xyz
+site_url: https://wiki.bloomcraft.xyz
 theme:
   name: material
   custom_dir: overrides
