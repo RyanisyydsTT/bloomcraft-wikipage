@@ -11,5 +11,7 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+      - run: sudo cp docs/fonts/zpix.ttf /usr/share/fonts/truetype/
+      - run: sudo fc-cache -fv
       - run: pip install mkdocs-material pillow CairoSVG
       - run: mkdocs gh-deploy --force
