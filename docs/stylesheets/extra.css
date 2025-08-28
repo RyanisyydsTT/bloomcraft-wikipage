@@ -255,3 +255,21 @@ footer .footer-content p { margin: 0.1rem 0; }
   border-radius: 6px !important;
   color: var(--primary) !important;
 }
+
+
+/* Target all possible navigation containers */
+.md-nav__list,
+.md-nav__item,
+.md-nav__item--nested,
+.md-nav__item > *,
+.md-sidebar .md-nav__item {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Remove any pseudo-element backgrounds */
+.md-nav__item::before,
+.md-nav__item::after {
+  background: none !important;
+  display: none !important;
+}
