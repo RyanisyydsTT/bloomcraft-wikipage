@@ -11,3 +11,6 @@
 |`/homes`  |查看你儲存的所有home點
 |`/removehome <name>`  | 刪除你先前儲存的home點
 |`/sethome <name> ` | 儲存一個新的home點
+
+
+貢獻者: york_tw
