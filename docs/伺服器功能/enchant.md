@@ -93,7 +93,7 @@
 | **癱瘓打擊** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 4 | 生成一道閃電並給予對方緩慢及緩慢挖掘效果 |
 | **有毒攻擊** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 3 | 有機率給予對方中毒效果 |
 | **反毒甲** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 4 | 給攻擊者中毒效果 |
-| **堅不可摧** | <span class="icon-minecraft icon-minecraft-iron-sword"></span>, <span class="icon-minecraft icon-minecraft-iron-shovel"></span> | 10 | 延長鏟子的耐久度 |
+| **堅不可摧** | <span class="icon-minecraft icon-minecraft-iron-sword"></span>, <span class="icon-minecraft icon-minecraft-iron-shovel"></span> | 10 | 延長<span class="icon-minecraft icon-minecraft-diamond-shovel"></span>,的耐久度 |
 | **拖慢陷阱** | <span class="icon-minecraft icon-minecraft-bow"></span> | 4 | 有機率給予對方緩速及挖掘疲勞效果 |
 | **彈跳鞋** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 3 | 給予彈跳加速效果 |
 | **殭屍替身** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 10 | 對方攻擊你會生成殭屍替身混淆對手 |
@@ -150,7 +150,7 @@
 | **崇高** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 4 | 有機率移除 身上的不良藥水效果。 |
 | **布娃娃** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 4 | 受到攻擊時 有機率被擊退。 |
 | **格擋** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 有機率無效化一次攻擊， 並回擊最多 4 點傷害。 |
-| **壕溝** | <span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span>, 鏟子 | 9 | 有機率挖掘 3x3 區域的方塊。 |
+| **壕溝** | <span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span>, <span class="icon-minecraft icon-minecraft-diamond-shovel"></span>, | 9 | 有機率挖掘 3x3 區域的方塊。 |
 | **閃避** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 有機率閃避敵人的攻擊， 潛行時機率額外提高。 |
 | **守護者** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 10 | 有機率召喚鐵巨人來協助你， 並保護你免受攻擊。 |
 | **冰凍之觸** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 有機率對敵人造成緩速效果。 |
