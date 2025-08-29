@@ -18,14 +18,15 @@ theme:
     accent: pink
 extra_css:
   - stylesheets/extra.css
-  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css  
+  - https://www.gamergeeks.net/apps/minecraft/web-developer-tools/css-blocks-and-entities/minecraft.css
 markdown_extensions:
   - admonition
+  - md_in_html
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
