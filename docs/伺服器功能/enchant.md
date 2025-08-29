@@ -30,7 +30,7 @@
 
 | 附魔名稱      | 適用裝備   | 最高等級 | 效果說明        |
 | -------------- | ------ | ---- | ---------------- |
-| **天打雷劈** | 劍, 弓, 十字弓, 三叉戟 | 3 | 有機率讓對方被雷霹中 |
+| **天打雷劈** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span> | 3 | 有機率讓對方被雷霹中 |
 | **水行俠** | 帽子 | 1 | 水中呼吸 |
 | **煙燻** | 十字鎬 | 3 | 有機率自動將礦石轉變成礦物的錠型態 |
 | **經驗** | 工具 | 5 | 有機率從礦物中獲取更多經驗值 |
