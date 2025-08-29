@@ -104,7 +104,7 @@
 | **滅火** | 褲腿 | 3 | 著火時有機率自行熄滅。 |
 | **震波** | <span class="icon-minecraft icon-minecraft-diamond-chestplate"></span> | 5 | 當你生命值過低時，有機率擊退攻擊者。 |
 | **吸血** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 攻擊後幾秒內有機率恢復最多3點生命值。 |
-| **巨<span class="icon-minecraft icon-minecraft-diamond-sword"></span>** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 5 | 對手持弓的玩家造成額外傷害。 |
+| **巨劍** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 5 | 對手持弓的玩家造成額外傷害。 |
 | **弓箭大師** | <span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span> | 5 | 對手持劍的玩家造成額外傷害。 |
 | **火箭逃脫** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 1 | 當生命值過低時會將你彈飛到空中。 |
 | **詭術師** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 8 | 受到攻擊時，有機率瞬間 傳送到敵人背後。 |
@@ -131,11 +131,11 @@
 | 附魔名稱     | 適用裝備 | 最高等級 | 效果說明      |
 | -------- | ---- | ---- | -------------- |
 | **自動捲線器** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 4 | 使用釣竿時自動捲線 |
-| **農夫** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 3 | 可在3x3範圍內種植快速播種，Shift + 右鍵啟動 |
+| **農夫** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 3 | 可在3x3範圍內種植快速播種，Shift , 右鍵啟動 |
 | **馬鈴薯農** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 3 | Plant potatoes in a 3x3 area by shift+right-clicking. |
-| **胡蘿蔔農** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 3 | 在3x3範圍內快速種植胡蘿蔔 Shift + 右鍵啟動 |
+| **胡蘿蔔農** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 3 | 在3x3範圍內快速種植胡蘿蔔 Shift , 右鍵啟動 |
 | **果凍腳** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 3 | 有機會讓避免掉落傷害 |
-| **r尖銳鉤爪** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 9 | 使魚鉤具有攻擊性 |
+| **尖銳鉤爪** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 9 | 使魚鉤具有攻擊性 |
 | **天選之釣** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 3 | 有機會在釣魚時給予玩家幸運效果 |
 | **極凍刺骨** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 5 | 有機會讓堆方流血並讓其行動變得緩慢 |
 | **伐木** | <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 3 | 有機率一擊砍倒整棵樹。 |
@@ -168,7 +168,7 @@
 | **地獄火** | <span class="icon-minecraft icon-minecraft-bow"></span> | 5 | 射出的箭矢會變成火球。 |
 | **長弓** | <span class="icon-minecraft icon-minecraft-bow"></span> | 4 | 對手手持弓時，造成更高傷害。 |
 | **坦克** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 4 | 有機率使敵方斧頭造成的傷害每級降低 2%。 |
-| **<span class="icon-minecraft icon-minecraft-diamond-sword"></span>士** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 有機率在持劍時減少受到的傷害，最高可減少 22%。 |
+| **劍士** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 有機率在持劍時減少受到的傷害，最高可減少 22%。 |
 | **終界居民** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 在地獄中對怪物造成雙倍傷害。 |
 | **終界大師** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 在終界中對怪物造成雙倍傷害。 |
 | **苦力怕<span class="icon-minecraft icon-minecraft-iron-chestplate"></span>** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 3 | 有機率免疫爆炸傷害， 更高等級可獲得少量治療。 |
@@ -240,7 +240,7 @@
 | **挖掘加速** | <span class="icon-minecraft icon-minecraft-iron-shovel"></span> | 3 | 挖掘加速 |
 | **恢復** | <span class="icon-minecraft icon-minecraft-iron-shovel"></span> | 4 | 當物品即將損壞時，有機會移除此附魔， 並修復一半的耐久度。 |
 | **不朽** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 4 | 有機率防止盔甲耐久度損耗 |
-| **靈魂綁定** | <span class="icon-minecraft icon-minecraft-iron-sword"></span> + <span class="icon-minecraft icon-minecraft-iron-shovel"></span> + <span class="icon-minecraft icon-minecraft-bow"></span> | 3 | 有機率將物品永久綁定在背包中 |
+| **靈魂綁定** | <span class="icon-minecraft icon-minecraft-iron-sword"></span> , <span class="icon-minecraft icon-minecraft-iron-shovel"></span> , <span class="icon-minecraft icon-minecraft-bow"></span> | 3 | 有機率將物品永久綁定在背包中 |
 | **鳳凰** | <span class="icon-minecraft icon-minecraft-diamond-chestplate"></span> | 3 | 有機率你死亡後快速重生 |
 | **恐嚇** | <span class="icon-minecraft icon-minecraft-iron-sword"></span> | 5 | 暫時將對方的頭盔換成南瓜 |
 | **無效化** | <span class="icon-minecraft icon-minecraft-iron-sword"></span> | 4 | 當對方失明時可打出雙倍傷害，40靈魂/啟用 |
