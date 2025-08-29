@@ -20,6 +20,7 @@
 !!! tip "小提醒"
     別忽視低階附魔，許多效果能, 高階附魔疊加，發揮驚人力量。
     若裝備有「不可修改」標記，則無法套用自訂附魔。
+    物品的靈魂數量可以使用**靈魂追蹤器**查看
 
 ---
 
@@ -164,14 +165,14 @@
 | **混亂** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 4 | 有機率使敵人進入噁心狀態。 |
 | **瓦解** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 4 | 每次攻擊有機率對敵方所有裝備造成額外耐久傷害。 |
 | **粉碎** | <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 4 | 每次攻擊有機率對敵方所有裝備造成額外耐久傷害。 |
-| **重型** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 每級可減少敵方<span class="icon-minecraft icon-minecraft-bow"></span>箭造成的傷害 2%。 |
+| **重型** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 每級可減少敵方弓箭造成的傷害 2%。 |
 | **地獄火** | <span class="icon-minecraft icon-minecraft-bow"></span> | 5 | 射出的箭矢會變成火球。 |
 | **長弓** | <span class="icon-minecraft icon-minecraft-bow"></span> | 4 | 對手手持弓時，造成更高傷害。 |
 | **坦克** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 4 | 有機率使敵方斧頭造成的傷害每級降低 2%。 |
 | **劍士** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 有機率在持劍時減少受到的傷害，最高可減少 22%。 |
 | **終界居民** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 在地獄中對怪物造成雙倍傷害。 |
 | **終界大師** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 在終界中對怪物造成雙倍傷害。 |
-| **苦力怕<span class="icon-minecraft icon-minecraft-iron-chestplate"></span>** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 3 | 有機率免疫爆炸傷害， 更高等級可獲得少量治療。 |
+| **苦力怕盔甲** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 3 | 有機率免疫爆炸傷害， 更高等級可獲得少量治療。 |
 | **靈魂** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 10 | 有機率召喚烈焰使者來守護你。 |
 | **流血** | <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 6 | 使你的對手流血造成持續傷害。 |
 | **獻祭** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 使鄰近生物開始燃燒 |
