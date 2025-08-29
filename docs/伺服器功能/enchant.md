@@ -61,7 +61,7 @@
 | **汽油** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 4 | 有機率讓對方燃燒 |
 | **獵人** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 4 | 有機率在戰鬥中補充飢餓值 |
 | **傳送器** | <span class="icon-minecraft icon-minecraft-iron-shovel"></span> | 4 | 自動將挖下來物品放進背包 |
-| **爆炸敢死隊** | 褲腿 | 8 | 在接近死亡時在周邊生成苦力怕 |
+| **爆炸敢死隊** | <span class="icon-minecraft icon-minecraft-diamond-leggings"></span> | 8 | 在接近死亡時在周邊生成苦力怕 |
 | **沒有人性的獵人** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 4 | 提升對非敵對生物的傷害 |
 | **靈魂剋星** | <span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span> | 4 | 增加對敵對生物的傷害 |
 | **病毒彈** | <span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span> | 3 | 有機會給予對方中毒效果 |
@@ -101,7 +101,7 @@
 | **凋零反擊** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 有機率施加凋零效果。 |
 | **煙霧彈** | <span class="icon-minecraft icon-minecraft-diamond-helmet"></span> | 8 | 當你瀕臨死亡時， 會生成煙霧彈來迷惑敵人。 |
 | **烈焰** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 3 | 造成爆炸性的火焰效果。 |
-| **滅火** | 褲腿 | 3 | 著火時有機率自行熄滅。 |
+| **滅火** | <span class="icon-minecraft icon-minecraft-diamond-leggings"></span> | 3 | 著火時有機率自行熄滅。 |
 | **震波** | <span class="icon-minecraft icon-minecraft-diamond-chestplate"></span> | 5 | 當你生命值過低時，有機率擊退攻擊者。 |
 | **吸血** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 攻擊後幾秒內有機率恢復最多3點生命值。 |
 | **巨劍** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 5 | 對手持弓的玩家造成額外傷害。 |
