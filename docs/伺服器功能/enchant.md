@@ -1,12 +1,12 @@
 # 自訂附魔系統
 
 這裡的附魔，不再只是原版 Minecraft 那些常見的「耐久」「保護」「效率」。
-你將能體驗到 **數百種全新設計的附魔效果**，包含戰鬥強化、<span class="icon-minecraft icon-minecraft-iron-shovel"></span>加成、防禦守護、甚至特殊能力。
+你將能體驗到 **數百種全新設計的附魔效果**，包含戰鬥強化、工具加成、防禦守護、甚至特殊能力。
 
 !!! note "系統特色"
     **超過 300 種附魔**，依照稀有度分為：基礎、獨特、精英、終極、傳奇、神話。
     **多樣獲取方式**：附魔台 `/enchanter`、修補匠 `/tinkerer`、煉金術師 `/alchemist`、活動掉落等。
-    **裝備專屬性**：每個附魔都有指定可附加的裝備類型（<span class="icon-minecraft icon-minecraft-iron-sword"></span>、<span class="icon-minecraft icon-minecraft-iron-chestplate"></span>、<span class="icon-minecraft icon-minecraft-iron-shovel"></span>、<span class="icon-minecraft icon-minecraft-bow"></span>弩）。
+    **裝備專屬性**：每個附魔都有指定可附加的裝備類型（武器、盔甲、工具、弓弩）。
     **成功, 摧毀率**：附魔書應用時存在成功率, 失敗風險，建議搭配 **白色卷軸** 保護。
     **合成, 強化**：相同等級的附魔書可合成提升等級，還能透過各種卷軸、魔法之塵來提高成功率。
 
