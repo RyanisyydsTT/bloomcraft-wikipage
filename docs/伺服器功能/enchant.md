@@ -7,18 +7,18 @@
     **超過 300 種附魔**，依照稀有度分為：基礎、獨特、精英、終極、傳奇、神話。
     **多樣獲取方式**：附魔台 `/enchanter`、修補匠 `/tinkerer`、煉金術師 `/alchemist`、活動掉落等。
     **裝備專屬性**：每個附魔都有指定可附加的裝備類型（<span class="icon-minecraft icon-minecraft-iron-sword"></span>、<span class="icon-minecraft icon-minecraft-iron-chestplate"></span>、<span class="icon-minecraft icon-minecraft-iron-shovel"></span>、<span class="icon-minecraft icon-minecraft-bow"></span>弩）。
-    **成功與摧毀率**：附魔書應用時存在成功率與失敗風險，建議搭配 **白色卷軸** 保護。
-    **合成與強化**：相同等級的附魔書可合成提升等級，還能透過各種卷軸、魔法之塵來提高成功率。
+    **成功, 摧毀率**：附魔書應用時存在成功率, 失敗風險，建議搭配 **白色卷軸** 保護。
+    **合成, 強化**：相同等級的附魔書可合成提升等級，還能透過各種卷軸、魔法之塵來提高成功率。
 
 ## 🎯 新手應該怎麼開始？
 
 1. 使用 `/enchanter` 購買一個附魔書。
 2. 拿到的附魔書，直接拖曳到裝備上即可使用。
 3. 注意書本上的 **成功率 / 損壞率**，必要時準備 **白卷軸** 保障裝備安全。
-4. 隨著等級與裝備提升，可以逐步挑戰 **更高稀有度的附魔**。
+4. 隨著等級, 裝備提升，可以逐步挑戰 **更高稀有度的附魔**。
 
 !!! tip "小提醒"
-    別忽視低階附魔，許多效果能與高階附魔疊加，發揮驚人力量。
+    別忽視低階附魔，許多效果能, 高階附魔疊加，發揮驚人力量。
     若裝備有「不可修改」標記，則無法套用自訂附魔。
 
 ---
@@ -47,12 +47,12 @@
 
 ## 🔵 獨特附魔
 
-獨特等級的附魔比基礎更強大，開始加入了戰鬥控制與額外資源獲取的效果。
-這些附魔對於 PvE 與 PvP 都有不錯的幫助，算是中期玩家必備的基礎戰力來源。
+獨特等級的附魔比基礎更強大，開始加入了戰鬥控制, 額外資源獲取的效果。
+這些附魔對於 PvE ,  PvP 都有不錯的幫助，算是中期玩家必備的基礎戰力來源。
 
 | 附魔名稱     | 適用裝備 | 最高等級 | 效果說明         |
 | -------- | ---- | ---- | ----------------- |
-| **一心二用的農夫** | 鋤頭 | 1 | 在作物被破壞時自動補上新的作物 |
+| **一心二用的農夫** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 1 | 在作物被破壞時自動補上新的作物 |
 | **飢荒警報** | <span class="icon-minecraft icon-minecraft-iron-sword"></span> | 4 | 有機會給予對方飢餓效果 |
 | **狂暴** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 5 | 有機率給予玩家力量＋挖掘疲勞效果 |
 | **反射** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 無視對方的傷害並反射所有傷害至對方 |
@@ -72,19 +72,19 @@
 
 ## 🟣 精英附魔
 
-精英等級附魔開始進入「進階戰鬥」與「多功能探索」階段，
-不僅能提升攻防，還能賦予特殊效果，常見於 PvP 與高難度副本。
+精英等級附魔開始進入「進階戰鬥」, 「多功能探索」階段，
+不僅能提升攻防，還能賦予特殊效果，常見於 PvP , 高難度副本。
 
 | 附魔名稱     | 適用裝備  | 最高等級 | 效果說明       |
 | -------- | ----- | ---- | --------------- |
 | **衝擊** | <span class="icon-minecraft icon-minecraft-trident"></span> | 4 | 有機會打出雙倍傷害 |
-| **毒鉤** | 釣魚竿 | 3 | 使魚鉤具有毒性 |
-| **火鉤** | 釣魚竿 | 3 | 使魚鉤具有燃燒對方之功能 |
+| **毒鉤** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 3 | 使魚鉤具有毒性 |
+| **火鉤** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 3 | 使魚鉤具有燃燒對方之功能 |
 | **一挖到底** | <span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span> | 3 | 把整個礦脈一次挖下來 |
 | **終界終結者** | <span class="icon-minecraft icon-minecraft-iron-sword"></span> | 5 | 提升對終界使者及終界龍的傷害 |
 | **嘶嘶嘶** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 3 | 提升對蜘蛛的傷害 |
-| **味精魚餌** | 釣魚竿 | 3 | 釣魚時獲得更多經驗值 |
-| **強拉釣鉤** | 釣魚竿 | 3 | 將勾到的實體拉至你身邊 |
+| **味精魚餌** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 3 | 釣魚時獲得更多經驗值 |
+| **強拉釣鉤** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 3 | 將勾到的實體拉至你身邊 |
 | **死神** | <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 4 | 有機率給予對方凋零及失明效果 |
 | **地獄獵人** | <span class="icon-minecraft icon-minecraft-iron-sword"></span> | 5 | 提升對地獄生物的傷害 |
 | **你是我的眼** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 3 | 有機率給予對方失明效果 |
@@ -93,7 +93,7 @@
 | **癱瘓打擊** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 4 | 生成一道閃電並給予對方緩慢及緩慢挖掘效果 |
 | **有毒攻擊** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 3 | 有機率給予對方中毒效果 |
 | **反毒甲** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 4 | 給攻擊者中毒效果 |
-| **堅不可摧** | <span class="icon-minecraft icon-minecraft-iron-sword"></span>與<span class="icon-minecraft icon-minecraft-iron-shovel"></span> | 10 | 延長鏟子的耐久度 |
+| **堅不可摧** | <span class="icon-minecraft icon-minecraft-iron-sword"></span>, <span class="icon-minecraft icon-minecraft-iron-shovel"></span> | 10 | 延長鏟子的耐久度 |
 | **拖慢陷阱** | <span class="icon-minecraft icon-minecraft-bow"></span> | 4 | 有機率給予對方緩速及挖掘疲勞效果 |
 | **彈跳鞋** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 3 | 給予彈跳加速效果 |
 | **殭屍替身** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 10 | 對方攻擊你會生成殭屍替身混淆對手 |
@@ -126,17 +126,17 @@
 ## 🟡 終極附魔
 
 終極等級附魔屬於「高階實用型」，
-能夠帶來強力的輔助效果與戰鬥增益，是進入後期的重要基石。
+能夠帶來強力的輔助效果, 戰鬥增益，是進入後期的重要基石。
 
 | 附魔名稱     | 適用裝備 | 最高等級 | 效果說明      |
 | -------- | ---- | ---- | -------------- |
-| **自動捲線器** | 釣魚竿 | 4 | 使用釣竿時自動捲線 |
-| **農夫** | 鋤頭 | 3 | 可在3x3範圍內種植快速播種，Shift + 右鍵啟動 |
-| **馬鈴薯農** | 鋤頭 | 3 | Plant potatoes in a 3x3 area by shift+right-clicking. |
-| **胡蘿蔔農** | 鋤頭 | 3 | 在3x3範圍內快速種植胡蘿蔔 Shift + 右鍵啟動 |
+| **自動捲線器** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 4 | 使用釣竿時自動捲線 |
+| **農夫** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 3 | 可在3x3範圍內種植快速播種，Shift + 右鍵啟動 |
+| **馬鈴薯農** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 3 | Plant potatoes in a 3x3 area by shift+right-clicking. |
+| **胡蘿蔔農** | <span class="icon-minecraft icon-minecraft-diamond-hoe"></span> | 3 | 在3x3範圍內快速種植胡蘿蔔 Shift + 右鍵啟動 |
 | **果凍腳** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 3 | 有機會讓避免掉落傷害 |
-| **r尖銳鉤爪** | 釣魚竿 | 9 | 使魚鉤具有攻擊性 |
-| **天選之釣** | 釣魚竿 | 3 | 有機會在釣魚時給予玩家幸運效果 |
+| **r尖銳鉤爪** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 9 | 使魚鉤具有攻擊性 |
+| **天選之釣** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 3 | 有機會在釣魚時給予玩家幸運效果 |
 | **極凍刺骨** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span> | 5 | 有機會讓堆方流血並讓其行動變得緩慢 |
 | **伐木** | <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 3 | 有機率一擊砍倒整棵樹。 |
 | **距離** | <span class="icon-minecraft icon-minecraft-iron-sword"></span> | 4 | 有機率擊退敵人並 獲得再生效果。 |
@@ -187,13 +187,13 @@
 ## 🟠 傳奇附魔
 
 傳奇附魔是玩家在 PvP、BOSS 戰中最追求的強大效果，
-往往能左右整場戰局，擁有極高的價值與稀有度。
+往往能左右整場戰局，擁有極高的價值, 稀有度。
 
 | 附魔名稱     | 適用裝備 | 最高等級 | 效果說明        |
 | -------- | ---- | ---- | --------------------- |
 | **割傷見紅** | <span class="icon-minecraft icon-minecraft-trident"></span> | 4 | 使對方流血，如果用近戰攻擊命中。 |
 | **野獸殺戮者** | <span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 4 | 提高對敵對生物的傷害 |
-| **雙倍魚樂** | 釣魚竿 | 3 | 有機會獲得兩倍的漁獲 |
+| **雙倍魚樂** | <span class="icon-minecraft icon-minecraft-fishing-rod"></span> | 3 | 有機會獲得兩倍的漁獲 |
 | **硬化** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 3 | 被玩家攻擊時有機率恢復耐久度。 |
 | **修補** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 3 | 被怪物攻擊時有機率恢復耐久度。 |
 | **笨拙** | <span class="icon-minecraft icon-minecraft-diamond-chestplate"></span> | 3 | 當你被箭矢擊中時， 有機率引爆敵人。 |
@@ -205,8 +205,8 @@
 | **水生** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 4 | 在水中造成雙倍傷害。 |
 | **審判** | <span class="icon-minecraft icon-minecraft-elytra"></span> | 5 | 有機率讓對手中毒並獲得再生效果。 |
 | **轉移** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 有機率讓對手中毒，並獲得再生效果。 |
-| **邪惡** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 防禦時對敵人施加虛弱與凋零效果。 |
-| **混沌** | <span class="icon-minecraft icon-minecraft-trident"></span> | 5 | 對敵人施加虛弱與凋零效果。 |
+| **邪惡** | <span class="icon-minecraft icon-minecraft-iron-chestplate"></span> | 5 | 防禦時對敵人施加虛弱, 凋零效果。 |
+| **混沌** | <span class="icon-minecraft icon-minecraft-trident"></span> | 5 | 對敵人施加虛弱, 凋零效果。 |
 | **抽搐** | <span class="icon-minecraft icon-minecraft-diamond-boots"></span> | 6 | 將攻擊者拋向空中。 |
 | **堅實** | <span class="icon-minecraft icon-minecraft-diamond-chestplate"></span> | 6 | 有機率受到更少的傷害 |
 | **野蠻人** | <span class="icon-minecraft icon-minecraft-diamond-axe"></span> | 4 | 有機率提升斧頭的傷害 |
@@ -232,7 +232,7 @@
 ## 🔴 神話附魔
 
 神話級附魔是極度稀有的頂尖力量，通常只會在伺服器的特殊活動、限時寶箱或頂級任務中出現。
-擁有它們往往代表著無與倫比的戰力與榮耀。
+擁有它們往往代表著無, 倫比的戰力, 榮耀。
 
 | 附魔名稱      | 適用裝備 | 最高等級 | 效果說明            |
 | --------- | ---- | ---- | ------------------------- |
