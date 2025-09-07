@@ -20,8 +20,12 @@
 
 ## 🔨 特殊物品製作
 ### 特殊鑽石
-製作配方:<img width="860" height="409" alt="圖片" src="https://github.com/user-attachments/assets/b907da2c-04c1-4a5c-8636-14ab585e7fb2" />
+製作配方:
+
+<img width="860" height="409" alt="圖片" src="https://github.com/user-attachments/assets/b907da2c-04c1-4a5c-8636-14ab585e7fb2" />
 
 ## 特殊綠寶石
-製作配方:<img width="860" height="408" alt="圖片" src="https://github.com/user-attachments/assets/24d7d546-2797-46e7-b6c5-9dcdd9451bdc" />
+製作配方:
+
+<img width="860" height="408" alt="圖片" src="https://github.com/user-attachments/assets/24d7d546-2797-46e7-b6c5-9dcdd9451bdc" />
 
