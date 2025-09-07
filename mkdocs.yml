@@ -18,12 +18,18 @@ theme:
     accent: pink
 extra_css:
   - stylesheets/extra.css
+  - https://www.gamergeeks.net/apps/minecraft/web-developer-tools/css-blocks-and-entities/minecraft.css
 markdown_extensions:
   - admonition
+  - md_in_html
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true  
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 plugins:
   - social:
       cards: true
