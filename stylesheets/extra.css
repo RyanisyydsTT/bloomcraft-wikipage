@@ -1,0 +1,348 @@
+/* --- 字體 --- */
+@font-face {
+    font-family: "zpix";
+    src: url("../fonts/zpix.ttf") format("truetype");
+    font-display: swap;
+}
+
+:root {
+    --primary: #ff6b9d;
+    --secondary: #ff8fab;
+    --accent: #ffa8cc;
+    --background: #0a0e1a;
+    --surface: #1a1f35;
+    --text: #ffffff;
+    --text-muted: #94a3b8;
+}
+
+/* --- 全站字體 --- */
+body,
+.md-typeset {
+    font-family: "zpix", "Noto Sans TC", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* --- 頂部導覽列 --- */
+.md-header {
+    background: rgba(10, 14, 26, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 107, 157, 0.2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+.md-header__title {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* --- Tabs 導覽 --- */
+.md-tabs { background: transparent; }
+.md-tabs__link {
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.4rem 0.8rem;
+    color: var(--text-muted);
+}
+.md-tabs__link--active,
+.md-tabs__link:hover {
+    color: var(--primary);
+    background: rgba(255, 107, 157, 0.1);
+}
+
+/* --- 按鈕 --- */
+.md-typeset .md-button,
+.md-typeset .md-button--primary {
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+.md-typeset .md-button--primary {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+}
+.md-typeset .md-button--primary:hover { background: var(--secondary); }
+
+/* --- 卡片 & 提示區塊 --- */
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 12px;
+    border: 1px solid rgba(255, 107, 157, 0.2);
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* --- 區塊標題 H2/H3 --- */
+.md-typeset h2,
+.md-typeset h3 {
+    font-family: "zpix", monospace;
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--surface);
+    border-top: 1px solid rgba(255, 107, 157, 0.2);
+    padding: 1rem 0.5rem;
+    text-align: center;
+}
+footer .footer-content {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+footer .footer-content p { margin: 0.1rem 0; }
+
+/* ====== 深色主題可讀性 ====== */
+.md-main { background: var(--background); color: var(--text); }
+.md-sidebar,
+.md-nav--primary,
+.md-nav--secondary { background: var(--surface); }
+
+/* ====== 手機版導航修正 - 強化版 ====== */
+/* 手機版漢堡選單強制背景 */
+@media screen and (max-width: 76.1875em) {
+  /* 主選單容器 */
+  .md-nav--primary {
+    background: var(--surface) !important;
+    background-color: var(--surface) !important;
+  }
+  
+  /* 選單覆蓋層 */
+  .md-overlay {
+    background: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+  }
+  
+  /* 側邊欄容器 */
+  .md-sidebar--primary {
+    background: var(--surface) !important;
+    background-color: var(--surface) !important;
+  }
+  
+  /* 選單內部 */
+  .md-nav--primary .md-nav__list {
+    background: var(--surface) !important;
+    background-color: var(--surface) !important;
+  }
+  
+  /* 選單項目保持透明，但確保父容器有背景 */
+  .md-nav--primary .md-nav__item {
+    background: transparent !important;
+  }
+  
+  /* 選單標題區域 */
+  .md-nav--primary .md-nav__title {
+    background: rgba(255, 107, 157, 0.1) !important;
+    background-color: rgba(255, 107, 157, 0.1) !important;
+    border-bottom: 1px solid rgba(255, 107, 157, 0.2) !important;
+  }
+  
+  /* 手機版選單 hover 效果 */
+  .md-nav--primary .md-nav__link:hover,
+  .md-nav--primary .md-nav__link:focus {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-radius: 6px !important;
+    color: var(--primary) !important;
+  }
+  
+  .md-nav--primary .md-nav__link--active {
+    background: rgba(255, 107, 157, 0.2) !important;
+    border-radius: 6px !important;
+    color: var(--primary) !important;
+  }
+}
+
+/* 手機版選單按鈕 */
+.md-header__button {
+  color: var(--text) !important;
+}
+
+/* 確保手機版不受全域透明影響 */
+@media screen and (max-width: 76.1875em) {
+  .md-sidebar--primary,
+  .md-sidebar--primary *:not(.md-nav__item) {
+    background: var(--surface) !important;
+  }
+}
+
+/* 連結顏色 */
+.md-typeset a { color: var(--primary); }
+.md-typeset a:hover { color: var(--secondary); }
+.md-nav__link { color: var(--text-muted); }
+
+/* 表格 */
+.md-typeset table:not([class]) {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  color: var(--text);
+  border-color: rgba(255,255,255,0.12);
+}
+.md-typeset table:not([class]) th { background: rgba(255,255,255,0.04); }
+
+/* 程式碼區塊 */
+.md-typeset code {
+  background: #111827;
+  color: #e5e7eb;
+  border-radius: 6px;
+}
+.md-typeset pre {
+  background: #0b1220;
+  color: #e5e7eb;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+}
+
+/* 區塊引用、水平線 */
+.md-typeset blockquote {
+  border-left: 4px solid var(--primary);
+  background: rgba(255,255,255,0.03);
+}
+.md-typeset hr { border-color: rgba(255,255,255,0.12); }
+
+/* 搜尋面板 */
+.md-search__form { background: var(--surface); }
+.md-search__input { color: var(--text); }
+
+/* ====== FIXED: 徹底清除所有導航背景 ====== */
+
+/* 最高優先級：強制移除所有導航相關背景 */
+/* 但排除手機版主導航 */
+.md-sidebar:not(.md-sidebar--primary) *,
+.md-nav:not(.md-nav--primary) *,
+.md-nav--secondary *,
+.md-sidebar--secondary * {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* 桌面版導航背景清除 */
+@media screen and (min-width: 76.25em) {
+  .md-nav *,
+  .md-sidebar * {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* 特別針對右側 TOC */
+.md-sidebar--secondary,
+.md-sidebar--secondary .md-sidebar__scrollwrap,
+.md-sidebar--secondary .md-nav,
+.md-sidebar--secondary .md-nav__list,
+.md-sidebar--secondary .md-nav__item,
+.md-sidebar--secondary .md-nav__link {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* 清除所有偽元素 */
+.md-nav *::before,
+.md-nav *::after,
+.md-sidebar *::before,
+.md-sidebar *::after {
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  content: none !important;
+  display: none !important;
+}
+
+/* 清除所有可能的選擇器組合 */
+.md-nav__item,
+.md-nav__item--nested,
+.md-nav__item:nth-child(n),
+.md-nav__item:nth-of-type(n),
+li.md-nav__item {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* 清除父容器可能的背景 */
+.md-nav__title,
+.md-sidebar__scrollwrap,
+.md-sidebar__inner,
+.md-sidebar {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* 只在 hover/active 才加背景 */
+.md-nav__link:hover,
+.md-nav__link:focus {
+  background: rgba(255, 255, 255, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 6px !important;
+  color: var(--primary) !important;
+}
+
+.md-nav__item .md-nav__link--active {
+  background: rgba(255, 107, 157, 0.15) !important;
+  background-color: rgba(255, 107, 157, 0.15) !important;
+  border-radius: 6px !important;
+  color: var(--primary) !important;
+}
+
+/* ====== 核彈級背景清除 ====== */
+/* 如果上面還不夠，使用這個終極方案 */
+.md-sidebar--secondary * {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* 強制覆蓋任何可能的 CSS 變數背景 */
+.md-nav__item {
+  --md-nav-item-background: transparent !important;
+  --md-nav-item-background-color: transparent !important;
+}
+
+/* ====== FIXED: Emoji 修正 ====== */
+
+/* 確保 emoji 正確顯示 */
+.md-typeset :is(p, li, span, strong, em, h1, h2, h3, h4, h5, h6) {
+  -webkit-text-fill-color: unset !important;
+  color: inherit !important;
+}
+
+/* Emoji 字體回退 */
+.emoji,
+span:has(img[src*="emoji"]),
+*:contains("🌸"),
+*:contains("🔥"),
+*:contains("💎"),
+*:contains("🏪"),
+*:contains("⚙️") {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "zpix", sans-serif !important;
+  color: inherit !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+/* 修正 admonition 圖示 */
+.md-typeset .admonition-title:before,
+.md-typeset .admonition-title::before {
+  color: inherit !important;
+  -webkit-text-fill-color: unset !important;
+}
+
+/* ====== 搜尋 highlight 柔和 ====== */
+.md-typeset mark {
+  background: rgba(255,168,204,0.18) !important;
+  color: var(--text) !important;
+}
