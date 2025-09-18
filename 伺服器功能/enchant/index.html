@@ -1,0 +1,2172 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="在花曜之境中創造屬於你的傳奇故事">
+      
+      
+      
+        <link rel="canonical" href="https://wiki.bloomcraft.xyz/%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%8A%9F%E8%83%BD/enchant/">
+      
+      
+        <link rel="prev" href="../chestshop/">
+      
+      
+        <link rel="next" href="../farming/">
+      
+      
+      <link rel="icon" href="../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>自訂附魔系統 - 花曜之境伺服器Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/icons-minecraft-225.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="自訂附魔系統 - 花曜之境伺服器Wiki" >
+      
+        <meta  property="og:description"  content="在花曜之境中創造屬於你的傳奇故事" >
+      
+        <meta  property="og:image"  content="https://wiki.bloomcraft.xyz/assets/images/social/伺服器功能/enchant.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://wiki.bloomcraft.xyz/%E4%BC%BA%E6%9C%8D%E5%99%A8%E5%8A%9F%E8%83%BD/enchant/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="自訂附魔系統 - 花曜之境伺服器Wiki" >
+      
+        <meta  name="twitter:description"  content="在花曜之境中創造屬於你的傳奇故事" >
+      
+        <meta  name="twitter:image"  content="https://wiki.bloomcraft.xyz/assets/images/social/伺服器功能/enchant.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="花曜之境伺服器Wiki" class="md-header__button md-logo" aria-label="花曜之境伺服器Wiki" data-md-component="logo">
+      
+  <img src="../../images/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            花曜之境伺服器Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              自訂附魔系統
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/RyanisyydsTT/bloomcraft-wikipage" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bloomcraft-wikipage
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  歡迎來到 BloomCraft 花曜之境 Wiki
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../events/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  寶石集集樂活動
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../rules/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  玩家規則
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Home/" class="md-tabs__link">
+          
+  
+  
+  伺服器功能
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="花曜之境伺服器Wiki" class="md-nav__button md-logo" aria-label="花曜之境伺服器Wiki" data-md-component="logo">
+      
+  <img src="../../images/favicon.png" alt="logo">
+
+    </a>
+    花曜之境伺服器Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/RyanisyydsTT/bloomcraft-wikipage" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bloomcraft-wikipage
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    歡迎來到 BloomCraft 花曜之境 Wiki
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    寶石集集樂活動
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    玩家規則
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    伺服器功能
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            伺服器功能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bank/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    銀行系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chestshop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    箱子商店系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    自訂附魔系統
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    自訂附魔系統
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 新手應該怎麼開始？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚪ 基礎附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟢 獨特附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔵 精英附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟡 終極附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟠 傳奇附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟣 神話附魔
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../farming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    農業系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fishing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    漁業系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../land/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    領地系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../menu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    選單介紹
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    挖礦系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../particle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    粒子效果系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../season/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    季節系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    商店系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../skill/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    技能系統
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../special%20item/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    特殊物品合成
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 新手應該怎麼開始？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚪ 基礎附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟢 獨特附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔵 精英附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟡 終極附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟠 傳奇附魔
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟣 神話附魔
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">自訂附魔系統</h1>
+<p>這裡的附魔，不再只是原版 Minecraft 那些常見的「耐久」「保護」「效率」。
+你將能體驗到 <strong>數百種全新設計的附魔效果</strong>，包含戰鬥強化、工具加成、防禦守護、甚至特殊能力。</p>
+<div class="admonition note">
+<p class="admonition-title">系統特色</p>
+<p><strong>超過 300 種附魔</strong>，依照稀有度分為：基礎、獨特、精英、終極、傳奇、神話。
+<strong>多樣獲取方式</strong>：附魔台 <code>/enchanter</code>、修補匠 <code>/tinkerer</code>、煉金術師 <code>/alchemist</code>、活動掉落等。
+<strong>裝備專屬性</strong>：每個附魔都有指定可附加的裝備類型（武器、盔甲、工具、弓弩）。
+<strong>成功, 摧毀率</strong>：附魔書應用時存在成功率, 失敗風險，建議搭配 <strong>白色卷軸</strong> 保護。
+<strong>合成, 強化</strong>：相同等級的附魔書可合成提升等級，還能透過各種卷軸、魔法之塵來提高成功率。</p>
+</div>
+<h2 id="_2">🎯 新手應該怎麼開始？</h2>
+<ol>
+<li>使用 <code>/enchanter</code> 購買一個附魔書。</li>
+<li>拿到的附魔書，直接拖曳到裝備上即可使用。</li>
+<li>注意書本上的 <strong>成功率 / 損壞率</strong>，必要時準備 <strong>白卷軸</strong> 保障裝備安全。</li>
+<li>隨著等級, 裝備提升，可以逐步挑戰 <strong>更高稀有度的附魔</strong>。</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">小提醒</p>
+<p>別忽視低階附魔，許多效果能, 高階附魔疊加，發揮驚人力量。
+若裝備有「不可修改」標記，則無法套用自訂附魔。
+物品的靈魂數量可以使用<strong>靈魂追蹤器</strong>查看</p>
+</div>
+<hr />
+<h2 id="_3">⚪ 基礎附魔</h2>
+<p>這些附魔屬於最基礎的等級，通常提供簡單的便利功能或小幅度的戰鬥加成，</p>
+<table>
+<thead>
+<tr>
+<th>附魔名稱</th>
+<th>適用裝備</th>
+<th>最高等級</th>
+<th>效果說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>天打雷劈</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>3</td>
+<td>有機率讓對方被雷霹中</td>
+</tr>
+<tr>
+<td><strong>水行俠</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-helmet"></span></td>
+<td>1</td>
+<td>水中呼吸</td>
+</tr>
+<tr>
+<td><strong>煙燻</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span></td>
+<td>3</td>
+<td>有機率自動將礦石轉變成礦物的錠型態</td>
+</tr>
+<tr>
+<td><strong>經驗</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-shovel"></span></td>
+<td>5</td>
+<td>有機率從礦物中獲取更多經驗值</td>
+</tr>
+<tr>
+<td><strong>單身8964年的右手</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-shovel"></span></td>
+<td>3</td>
+<td>有機率在破壞方塊後獲得挖掘加速效果</td>
+</tr>
+<tr>
+<td><strong>呼吸器</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span></td>
+<td>2</td>
+<td>有機率在水中挖掘方塊後獲得氧氣</td>
+</tr>
+<tr>
+<td><strong>葉黃素</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-helmet"></span></td>
+<td>1</td>
+<td>提供永久的夜視效果</td>
+</tr>
+<tr>
+<td><strong>斷頭計</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>3</td>
+<td>有機率在對方死亡後掉落其的頭顱</td>
+</tr>
+<tr>
+<td><strong>氣場</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>5</td>
+<td>有機率將對方推走</td>
+</tr>
+<tr>
+<td><strong>電影</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>有機率在戰鬥中給予玩家聲光效果</td>
+</tr>
+<tr>
+<td><strong>死亡之觸</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>5</td>
+<td>提升對殭屍的傷害</td>
+</tr>
+<tr>
+<td><strong>粉碎性骨折</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>3</td>
+<td>提升對骷髏的傷害</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_4">🟢 獨特附魔</h2>
+<p>獨特等級的附魔比基礎更強大，開始加入了戰鬥控制, 額外資源獲取的效果。
+這些附魔對於 PvE ,  PvP 都有不錯的幫助，算是中期玩家必備的基礎戰力來源。</p>
+<table>
+<thead>
+<tr>
+<th>附魔名稱</th>
+<th>適用裝備</th>
+<th>最高等級</th>
+<th>效果說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>一心二用的農夫</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-hoe"></span></td>
+<td>1</td>
+<td>在作物被破壞時自動補上新的作物</td>
+</tr>
+<tr>
+<td><strong>飢荒警報</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>4</td>
+<td>有機會給予對方飢餓效果</td>
+</tr>
+<tr>
+<td><strong>狂暴</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>5</td>
+<td>有機率給予玩家力量＋挖掘疲勞效果</td>
+</tr>
+<tr>
+<td><strong>反射</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>5</td>
+<td>無視對方的傷害並反射所有傷害至對方</td>
+</tr>
+<tr>
+<td><strong>獄隨盾</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>有機率無視對方傷害</td>
+</tr>
+<tr>
+<td><strong>炸物</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>5</td>
+<td>有機會射出會爆炸的箭</td>
+</tr>
+<tr>
+<td><strong>汽油</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>有機率讓對方燃燒</td>
+</tr>
+<tr>
+<td><strong>獵人</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>4</td>
+<td>有機率在戰鬥中補充飢餓值</td>
+</tr>
+<tr>
+<td><strong>傳送器</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-shovel"></span></td>
+<td>4</td>
+<td>自動將挖下來物品放進背包</td>
+</tr>
+<tr>
+<td><strong>爆炸敢死隊</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-leggings"></span></td>
+<td>8</td>
+<td>在接近死亡時在周邊生成苦力怕</td>
+</tr>
+<tr>
+<td><strong>沒有人性的獵人</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>4</td>
+<td>提升對非敵對生物的傷害</td>
+</tr>
+<tr>
+<td><strong>靈魂剋星</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>4</td>
+<td>增加對敵對生物的傷害</td>
+</tr>
+<tr>
+<td><strong>病毒彈</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>3</td>
+<td>有機會給予對方中毒效果</td>
+</tr>
+<tr>
+<td><strong>凋亡之箭</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>5</td>
+<td>有機率施加凋零效果。</td>
+</tr>
+<tr>
+<td><strong>吞噬</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>3</td>
+<td>擊殺怪物時有機率恢復飽食度。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_5">🔵 精英附魔</h2>
+<p>精英等級附魔開始進入「進階戰鬥」, 「多功能探索」階段，
+不僅能提升攻防，還能賦予特殊效果，常見於 PvP , 高難度副本。</p>
+<table>
+<thead>
+<tr>
+<th>附魔名稱</th>
+<th>適用裝備</th>
+<th>最高等級</th>
+<th>效果說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>衝擊</strong></td>
+<td><span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>4</td>
+<td>有機會打出雙倍傷害</td>
+</tr>
+<tr>
+<td><strong>毒鉤</strong></td>
+<td><span class="icon-minecraft icon-minecraft-fishing-rod"></span></td>
+<td>3</td>
+<td>使魚鉤具有毒性</td>
+</tr>
+<tr>
+<td><strong>火鉤</strong></td>
+<td><span class="icon-minecraft icon-minecraft-fishing-rod"></span></td>
+<td>3</td>
+<td>使魚鉤具有燃燒對方之功能</td>
+</tr>
+<tr>
+<td><strong>一挖到底</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span></td>
+<td>3</td>
+<td>把整個礦脈一次挖下來</td>
+</tr>
+<tr>
+<td><strong>終界終結者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>5</td>
+<td>提升對終界使者及終界龍的傷害</td>
+</tr>
+<tr>
+<td><strong>嘶嘶嘶</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>3</td>
+<td>提升對蜘蛛的傷害</td>
+</tr>
+<tr>
+<td><strong>味精魚餌</strong></td>
+<td><span class="icon-minecraft icon-minecraft-fishing-rod"></span></td>
+<td>3</td>
+<td>釣魚時獲得更多經驗值</td>
+</tr>
+<tr>
+<td><strong>強拉釣鉤</strong></td>
+<td><span class="icon-minecraft icon-minecraft-fishing-rod"></span></td>
+<td>3</td>
+<td>將勾到的實體拉至你身邊</td>
+</tr>
+<tr>
+<td><strong>死神</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>4</td>
+<td>有機率給予對方凋零及失明效果</td>
+</tr>
+<tr>
+<td><strong>地獄獵人</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>5</td>
+<td>提升對地獄生物的傷害</td>
+</tr>
+<tr>
+<td><strong>你是我的眼</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>有機率給予對方失明效果</td>
+</tr>
+<tr>
+<td><strong>吸引力法則</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>有機率將怪物拖到你面前</td>
+</tr>
+<tr>
+<td><strong>冷颼颼</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>3</td>
+<td>使打擊方獲得緩慢效果</td>
+</tr>
+<tr>
+<td><strong>癱瘓打擊</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>4</td>
+<td>生成一道閃電並給予對方緩慢及緩慢挖掘效果</td>
+</tr>
+<tr>
+<td><strong>有毒攻擊</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>3</td>
+<td>有機率給予對方中毒效果</td>
+</tr>
+<tr>
+<td><strong>反毒甲</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>給攻擊者中毒效果</td>
+</tr>
+<tr>
+<td><strong>堅不可摧</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span>, <span class="icon-minecraft icon-minecraft-iron-shovel"></span></td>
+<td>10</td>
+<td>延長<span class="icon-minecraft icon-minecraft-diamond-shovel"></span>,的耐久度</td>
+</tr>
+<tr>
+<td><strong>拖慢陷阱</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>4</td>
+<td>有機率給予對方緩速及挖掘疲勞效果</td>
+</tr>
+<tr>
+<td><strong>彈跳鞋</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>3</td>
+<td>給予彈跳加速效果</td>
+</tr>
+<tr>
+<td><strong>殭屍替身</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>10</td>
+<td>對方攻擊你會生成殭屍替身混淆對手</td>
+</tr>
+<tr>
+<td><strong>巫毒詛咒</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>6</td>
+<td>有機會造成虛弱效果</td>
+</tr>
+<tr>
+<td><strong>凋零反擊</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>5</td>
+<td>有機率施加凋零效果。</td>
+</tr>
+<tr>
+<td><strong>煙霧彈</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-helmet"></span></td>
+<td>8</td>
+<td>當你瀕臨死亡時， 會生成煙霧彈來迷惑敵人。</td>
+</tr>
+<tr>
+<td><strong>烈焰</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>3</td>
+<td>造成爆炸性的火焰效果。</td>
+</tr>
+<tr>
+<td><strong>滅火</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-leggings"></span></td>
+<td>3</td>
+<td>著火時有機率自行熄滅。</td>
+</tr>
+<tr>
+<td><strong>震波</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-chestplate"></span></td>
+<td>5</td>
+<td>當你生命值過低時，有機率擊退攻擊者。</td>
+</tr>
+<tr>
+<td><strong>吸血</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>攻擊後幾秒內有機率恢復最多3點生命值。</td>
+</tr>
+<tr>
+<td><strong>巨劍</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>5</td>
+<td>對手持弓的玩家造成額外傷害。</td>
+</tr>
+<tr>
+<td><strong>弓箭大師</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span>, <span class="icon-minecraft icon-minecraft-crossbow"></span>, <span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>5</td>
+<td>對手持劍的玩家造成額外傷害。</td>
+</tr>
+<tr>
+<td><strong>火箭逃脫</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>1</td>
+<td>當生命值過低時會將你彈飛到空中。</td>
+</tr>
+<tr>
+<td><strong>詭術師</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>8</td>
+<td>受到攻擊時，有機率瞬間 傳送到敵人背後。</td>
+</tr>
+<tr>
+<td><strong>詛咒</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>2</td>
+<td>有機率讓敵人獲得挖掘疲勞效果。</td>
+</tr>
+<tr>
+<td><strong>動量</strong></td>
+<td><span class="icon-minecraft icon-minecraft-elytra"></span></td>
+<td>3</td>
+<td>使用煙火時有機率獲得速度加成。</td>
+</tr>
+<tr>
+<td><strong>神射手</strong></td>
+<td><span class="icon-minecraft icon-minecraft-crossbow"></span></td>
+<td>4</td>
+<td>提高你使用弩時造成的傷害。</td>
+</tr>
+<tr>
+<td><strong>波塞頓</strong></td>
+<td><span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>4</td>
+<td>提高你使用三叉戢時造成的傷害。</td>
+</tr>
+<tr>
+<td><strong>補充</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span></td>
+<td>3</td>
+<td>採礦時有機率恢復飽食度。</td>
+</tr>
+<tr>
+<td><strong>飛彈</strong></td>
+<td><span class="icon-minecraft icon-minecraft-crossbow"></span></td>
+<td>5</td>
+<td>射出的箭矢會變成火球。</td>
+</tr>
+<tr>
+<td><strong>暴擊</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>增加暴擊時造成的傷害。</td>
+</tr>
+<tr>
+<td><strong>火花</strong></td>
+<td><span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>3</td>
+<td>使對方燃燒</td>
+</tr>
+<tr>
+<td><strong>鈍力</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>4</td>
+<td>在重擊時給予更多傷害</td>
+</tr>
+<tr>
+<td><strong>懸浮</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>有機率無視擊退效果</td>
+</tr>
+<tr>
+<td><strong>夜行者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>晚上可將怪物凍結</td>
+</tr>
+<tr>
+<td><strong>磁性</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>You You You You ，將對方拉至自己面前</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_6">🟡 終極附魔</h2>
+<p>終極等級附魔屬於「高階實用型」，
+能夠帶來強力的輔助效果, 戰鬥增益，是進入後期的重要基石。</p>
+<table>
+<thead>
+<tr>
+<th>附魔名稱</th>
+<th>適用裝備</th>
+<th>最高等級</th>
+<th>效果說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>自動捲線器</strong></td>
+<td><span class="icon-minecraft icon-minecraft-fishing-rod"></span></td>
+<td>4</td>
+<td>使用釣竿時自動捲線</td>
+</tr>
+<tr>
+<td><strong>農夫</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-hoe"></span></td>
+<td>3</td>
+<td>可在3x3範圍內種植快速播種，Shift , 右鍵啟動</td>
+</tr>
+<tr>
+<td><strong>馬鈴薯農</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-hoe"></span></td>
+<td>3</td>
+<td>Plant potatoes in a 3x3 area by shift+right-clicking.</td>
+</tr>
+<tr>
+<td><strong>胡蘿蔔農</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-hoe"></span></td>
+<td>3</td>
+<td>在3x3範圍內快速種植胡蘿蔔 Shift , 右鍵啟動</td>
+</tr>
+<tr>
+<td><strong>果凍腳</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>3</td>
+<td>有機會讓避免掉落傷害</td>
+</tr>
+<tr>
+<td><strong>尖銳鉤爪</strong></td>
+<td><span class="icon-minecraft icon-minecraft-fishing-rod"></span></td>
+<td>9</td>
+<td>使魚鉤具有攻擊性</td>
+</tr>
+<tr>
+<td><strong>天選之釣</strong></td>
+<td><span class="icon-minecraft icon-minecraft-fishing-rod"></span></td>
+<td>3</td>
+<td>有機會在釣魚時給予玩家幸運效果</td>
+</tr>
+<tr>
+<td><strong>極凍刺骨</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>5</td>
+<td>有機會讓堆方流血並讓其行動變得緩慢</td>
+</tr>
+<tr>
+<td><strong>伐木</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>3</td>
+<td>有機率一擊砍倒整棵樹。</td>
+</tr>
+<tr>
+<td><strong>距離</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>4</td>
+<td>有機率擊退敵人並 獲得再生效果。</td>
+</tr>
+<tr>
+<td><strong>劈砍</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>7</td>
+<td>對範圍內的玩家造成傷害， 範圍會隨等級提升而增加。</td>
+</tr>
+<tr>
+<td><strong>範圍</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>7</td>
+<td>對範圍內的怪物造成傷害， 範圍會隨等級提升而增加。</td>
+</tr>
+<tr>
+<td><strong>天使</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>5</td>
+<td>受到傷害時有機率恢復生命值。</td>
+</tr>
+<tr>
+<td><strong>箭矢偏轉</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>有機率讓敵人的箭矢無法造成傷害。</td>
+</tr>
+<tr>
+<td><strong>箭矢破碎</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>6</td>
+<td>當你持有此附魔物品時，箭矢有機率彈開不造成傷害。</td>
+</tr>
+<tr>
+<td><strong>削弱</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>1</td>
+<td>有機率讓敵人獲得挖掘疲勞效果。</td>
+</tr>
+<tr>
+<td><strong>打斷</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>2</td>
+<td>有機率讓敵人獲得挖掘疲勞效果。</td>
+</tr>
+<tr>
+<td><strong>崇高</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>4</td>
+<td>有機率移除 身上的不良藥水效果。</td>
+</tr>
+<tr>
+<td><strong>布娃娃</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>受到攻擊時 有機率被擊退。</td>
+</tr>
+<tr>
+<td><strong>格擋</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>有機率無效化一次攻擊， 並回擊最多 4 點傷害。</td>
+</tr>
+<tr>
+<td><strong>壕溝</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span>, <span class="icon-minecraft icon-minecraft-diamond-shovel"></span>,</td>
+<td>9</td>
+<td>有機率挖掘 3x3 區域的方塊。</td>
+</tr>
+<tr>
+<td><strong>閃避</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>5</td>
+<td>有機率閃避敵人的攻擊， 潛行時機率額外提高。</td>
+</tr>
+<tr>
+<td><strong>守護者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>10</td>
+<td>有機率召喚鐵巨人來協助你， 並保護你免受攻擊。</td>
+</tr>
+<tr>
+<td><strong>冰凍之觸</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>有機率對敵人造成緩速效果。</td>
+</tr>
+<tr>
+<td><strong>強化</strong></td>
+<td><span class="icon-minecraft icon-minecraft-elytra"></span></td>
+<td>4</td>
+<td>減少你受到的傷害。</td>
+</tr>
+<tr>
+<td><strong>植入物</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-helmet"></span></td>
+<td>3</td>
+<td>每隔幾秒有機率恢復飽食度。</td>
+</tr>
+<tr>
+<td><strong>黑曜石護盾</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>1</td>
+<td>提供永久的防火效果。</td>
+</tr>
+<tr>
+<td><strong>穿透</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>5</td>
+<td>提高你對敵人造成的傷害。</td>
+</tr>
+<tr>
+<td><strong>弓手</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>4</td>
+<td>提高你使用弓時造成的傷害。</td>
+</tr>
+<tr>
+<td><strong>防護</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>2</td>
+<td>有機率在防禦時獲得傷害抗性。</td>
+</tr>
+<tr>
+<td><strong>消失</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>血量過低時有機率變得隱形。</td>
+</tr>
+<tr>
+<td><strong>混亂</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>4</td>
+<td>有機率使敵人進入噁心狀態。</td>
+</tr>
+<tr>
+<td><strong>瓦解</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>4</td>
+<td>每次攻擊有機率對敵方所有裝備造成額外耐久傷害。</td>
+</tr>
+<tr>
+<td><strong>粉碎</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>4</td>
+<td>每次攻擊有機率對敵方所有裝備造成額外耐久傷害。</td>
+</tr>
+<tr>
+<td><strong>重型</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>5</td>
+<td>每級可減少敵方弓箭造成的傷害 2%。</td>
+</tr>
+<tr>
+<td><strong>地獄火</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>5</td>
+<td>射出的箭矢會變成火球。</td>
+</tr>
+<tr>
+<td><strong>長弓</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>4</td>
+<td>對手手持弓時，造成更高傷害。</td>
+</tr>
+<tr>
+<td><strong>坦克</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>有機率使敵方斧頭造成的傷害每級降低 2%。</td>
+</tr>
+<tr>
+<td><strong>劍士</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>5</td>
+<td>有機率在持劍時減少受到的傷害，最高可減少 22%。</td>
+</tr>
+<tr>
+<td><strong>終界居民</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>在地獄中對怪物造成雙倍傷害。</td>
+</tr>
+<tr>
+<td><strong>終界大師</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>在終界中對怪物造成雙倍傷害。</td>
+</tr>
+<tr>
+<td><strong>苦力怕盔甲</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>3</td>
+<td>有機率免疫爆炸傷害， 更高等級可獲得少量治療。</td>
+</tr>
+<tr>
+<td><strong>靈魂</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>10</td>
+<td>有機率召喚烈焰使者來守護你。</td>
+</tr>
+<tr>
+<td><strong>流血</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>6</td>
+<td>使你的對手流血造成持續傷害。</td>
+</tr>
+<tr>
+<td><strong>獻祭</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>使鄰近生物開始燃燒</td>
+</tr>
+<tr>
+<td><strong>攻擊者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>3</td>
+<td>生成箭矢雨</td>
+</tr>
+<tr>
+<td><strong>狙擊手</strong></td>
+<td><span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>5</td>
+<td>命中對方頭部可打出雙倍傷害</td>
+</tr>
+<tr>
+<td><strong>神盾</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>3</td>
+<td>當你受到掉落傷害時，給予加速效果</td>
+</tr>
+<tr>
+<td><strong>墜落衝擊波</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>3</td>
+<td>當你受到掉落傷害時，鄰近生物也會受到傷害</td>
+</tr>
+<tr>
+<td><strong>夜貓子</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>在晚上可打出更多傷害</td>
+</tr>
+<tr>
+<td><strong>隨機</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>將對方的物品欄打亂</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_7">🟠 傳奇附魔</h2>
+<p>傳奇附魔是玩家在 PvP、BOSS 戰中最追求的強大效果，
+往往能左右整場戰局，擁有極高的價值, 稀有度。</p>
+<table>
+<thead>
+<tr>
+<th>附魔名稱</th>
+<th>適用裝備</th>
+<th>最高等級</th>
+<th>效果說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>割傷見紅</strong></td>
+<td><span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>4</td>
+<td>使對方流血，如果用近戰攻擊命中。</td>
+</tr>
+<tr>
+<td><strong>野獸殺戮者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span>, <span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>4</td>
+<td>提高對敵對生物的傷害</td>
+</tr>
+<tr>
+<td><strong>雙倍魚樂</strong></td>
+<td><span class="icon-minecraft icon-minecraft-fishing-rod"></span></td>
+<td>3</td>
+<td>有機會獲得兩倍的漁獲</td>
+</tr>
+<tr>
+<td><strong>硬化</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>3</td>
+<td>被玩家攻擊時有機率恢復耐久度。</td>
+</tr>
+<tr>
+<td><strong>修補</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>3</td>
+<td>被怪物攻擊時有機率恢復耐久度。</td>
+</tr>
+<tr>
+<td><strong>笨拙</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-chestplate"></span></td>
+<td>3</td>
+<td>當你被箭矢擊中時， 有機率引爆敵人。</td>
+</tr>
+<tr>
+<td><strong>騷亂</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>3</td>
+<td>有機率阻止對手的守衛生效。</td>
+</tr>
+<tr>
+<td><strong>反彈</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>3</td>
+<td>擊殺後有機率恢復生命。</td>
+</tr>
+<tr>
+<td><strong>雷電領主</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>3</td>
+<td>每連續攻擊 3 次怪物時，有機率召喚閃電打擊目標。</td>
+</tr>
+<tr>
+<td><strong>熔岩行者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>1</td>
+<td>能在熔岩上行走。</td>
+</tr>
+<tr>
+<td><strong>水上行者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>1</td>
+<td>能在水面上行走。</td>
+</tr>
+<tr>
+<td><strong>水生</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>4</td>
+<td>在水中造成雙倍傷害。</td>
+</tr>
+<tr>
+<td><strong>審判</strong></td>
+<td><span class="icon-minecraft icon-minecraft-elytra"></span></td>
+<td>5</td>
+<td>有機率讓對手中毒並獲得再生效果。</td>
+</tr>
+<tr>
+<td><strong>轉移</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>5</td>
+<td>有機率讓對手中毒，並獲得再生效果。</td>
+</tr>
+<tr>
+<td><strong>邪惡</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>5</td>
+<td>防禦時對敵人施加虛弱, 凋零效果。</td>
+</tr>
+<tr>
+<td><strong>混沌</strong></td>
+<td><span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>5</td>
+<td>對敵人施加虛弱, 凋零效果。</td>
+</tr>
+<tr>
+<td><strong>抽搐</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>6</td>
+<td>將攻擊者拋向空中。</td>
+</tr>
+<tr>
+<td><strong>堅實</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-chestplate"></span></td>
+<td>6</td>
+<td>有機率受到更少的傷害</td>
+</tr>
+<tr>
+<td><strong>野蠻人</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>4</td>
+<td>有機率提升斧頭的傷害</td>
+</tr>
+<tr>
+<td><strong>清醒</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>3</td>
+<td>有機率治癒失明效果並獲得夜視效果</td>
+</tr>
+<tr>
+<td><strong>雙重打擊</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>有機率打出雙重爆擊</td>
+</tr>
+<tr>
+<td><strong>齒輪</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-boots"></span></td>
+<td>3</td>
+<td>提升移動速度</td>
+</tr>
+<tr>
+<td><strong>點燃</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>3</td>
+<td>使鄰近玩家開始燃燒</td>
+</tr>
+<tr>
+<td><strong>殺戮光環</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>5</td>
+<td>有機率一次傷害多個生物</td>
+</tr>
+<tr>
+<td><strong>好奇</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>4</td>
+<td>有機率從怪物獲得更多經驗值</td>
+</tr>
+<tr>
+<td><strong>生命怪盜</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>5</td>
+<td>有機率在攻擊時偷取對方的生命值</td>
+</tr>
+<tr>
+<td><strong>超載</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>3</td>
+<td>允許玩家獲得更多生命值</td>
+</tr>
+<tr>
+<td><strong>裝甲</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>每等級減少2%對方傷害</td>
+</tr>
+<tr>
+<td><strong>鐵匠</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>5</td>
+<td>自動恢復耐久度，但傷害減半</td>
+</tr>
+<tr>
+<td><strong>持久</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>1</td>
+<td>持有此附魔可以讓工具恢復耐久度</td>
+</tr>
+<tr>
+<td><strong>解除武裝</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>8</td>
+<td>有機率推掉堆方身上隨機一個盔甲</td>
+</tr>
+<tr>
+<td><strong>衝突</strong></td>
+<td><span class="icon-minecraft icon-minecraft-trident"></span></td>
+<td>3</td>
+<td>增加爆擊傷害</td>
+</tr>
+<tr>
+<td><strong>發射</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>右鍵啟用，將自身彈射至天空</td>
+</tr>
+<tr>
+<td><strong>彈弓</strong></td>
+<td><span class="icon-minecraft icon-minecraft-elytra"></span></td>
+<td>3</td>
+<td>右鍵啟用，將自身彈射至天空</td>
+</tr>
+<tr>
+<td><strong>靜電</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>在鄰近玩家旁生成閃電</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_8">🟣 神話附魔</h2>
+<p>神話級附魔是極度稀有的頂尖力量，通常只會在伺服器的特殊活動、限時寶箱或頂級任務中出現。
+擁有它們往往代表著無, 倫比的戰力, 榮耀。</p>
+<table>
+<thead>
+<tr>
+<th>附魔名稱</th>
+<th>適用裝備</th>
+<th>最高等級</th>
+<th>效果說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>結晶化</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span></td>
+<td>1</td>
+<td>有機會將礦石轉換成礦物的磚型態</td>
+</tr>
+<tr>
+<td><strong>挖掘加速</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-shovel"></span></td>
+<td>3</td>
+<td>挖掘加速</td>
+</tr>
+<tr>
+<td><strong>恢復</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-shovel"></span></td>
+<td>4</td>
+<td>當物品即將損壞時，有機會移除此附魔， 並修復一半的耐久度。</td>
+</tr>
+<tr>
+<td><strong>不朽</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-chestplate"></span></td>
+<td>4</td>
+<td>有機率防止盔甲耐久度損耗</td>
+</tr>
+<tr>
+<td><strong>靈魂綁定</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span> , <span class="icon-minecraft icon-minecraft-iron-shovel"></span> , <span class="icon-minecraft icon-minecraft-bow"></span></td>
+<td>3</td>
+<td>有機率將物品永久綁定在背包中</td>
+</tr>
+<tr>
+<td><strong>鳳凰</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-chestplate"></span></td>
+<td>3</td>
+<td>有機率你死亡後快速重生</td>
+</tr>
+<tr>
+<td><strong>恐嚇</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>5</td>
+<td>暫時將對方的頭盔換成南瓜</td>
+</tr>
+<tr>
+<td><strong>無效化</strong></td>
+<td><span class="icon-minecraft icon-minecraft-iron-sword"></span></td>
+<td>4</td>
+<td>當對方失明時可打出雙倍傷害，40靈魂/啟用</td>
+</tr>
+<tr>
+<td><strong>衝刺</strong></td>
+<td><span class="icon-minecraft icon-minecraft-elytra"></span></td>
+<td>3</td>
+<td>拿下鞘翅瞬間給予玩家加速效果，10靈魂/啟用</td>
+</tr>
+<tr>
+<td><strong>雙倍</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>5</td>
+<td>更多怪物掉落物，5靈魂/啟用</td>
+</tr>
+<tr>
+<td><strong>疊加</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span></td>
+<td>5</td>
+<td>有機率在採礦時獲得更多礦石，5靈魂/啟用</td>
+</tr>
+<tr>
+<td><strong>鬼斧神工</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-axe"></span></td>
+<td>3</td>
+<td>攻擊玩家時可獲得更多靈魂</td>
+</tr>
+<tr>
+<td><strong>靈魂採礦者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-pickaxe"></span></td>
+<td>3</td>
+<td>在挖掘時獲得靈魂</td>
+</tr>
+<tr>
+<td><strong>靈魂收割者</strong></td>
+<td><span class="icon-minecraft icon-minecraft-diamond-sword"></span></td>
+<td>3</td>
+<td>有機率獲得怪物的靈魂</td>
+</tr>
+</tbody>
+</table>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+  <aside class="md-source-file">
+    
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:129717677+ryanisyydstt@users.noreply.github.com">Ryanisyyds</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer>
+  <div class="container">
+    <div class="footer-content">
+      <p>&copy; 2025 BloomCraft 花曜之境. 版權所有</p>
+      <p>在花曜之境中創造屬於你的傳奇故事</p>
+      <p>
+        NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR
+        ASSOCIATED WITH MOJANG.
+      </p>
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
