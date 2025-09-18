@@ -18,7 +18,7 @@ theme:
     accent: pink
 extra_css:
   - stylesheets/extra.css
-  - https://www.gamergeeks.net/apps/minecraft/web-developer-tools/css-blocks-and-entities/minecraft.css
+  - stylesheets/icons-minecraft-225.css
 markdown_extensions:
   - admonition
   - md_in_html
